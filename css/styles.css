@@ -16,34 +16,63 @@ body {
     background-color: #1d2540;
     text-decoration: none;
     color: #f2f2f2;
+    font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 600;
+        font-size: 1.3125em;
+        line-height: 1.96875em;
 }
 
 .cta-explore {
     text-decoration: none;
     color: #1aff00;
+    font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 500;
+        font-size: 1.3125em;
+        line-height: 1.96875em;
 }
 
 .cta-advertisment {
     text-decoration: none;
     color: #f2f2f2;
+    font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 500;
+        font-size: 2.3125em;
+        line-height: 3.46875em;
 }
 
 .cta-add-to-cart {
     background-color: #01403A;
     text-decoration: none;
     color: #f2f2f2;
+    font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 500;
+        font-size: 1.3125em;
+        line-height: 1.96875em;
 }
 
 .cta-pay-now {
+    text-decoration: none;
     color: #f2f2f2;
+    font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 500;
+        font-size: 1.3125em;
+        line-height: 1.96875em;
 }
 
 .links-about {
     text-decoration: none;
     color: #1aff00;
+    font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 500;
+        font-size: 1em;
+        line-height: 1.5em;
 }
 
 .send-button {
     text-decoration: none;
     color: #f2f2f2;
+    font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 500;
+        font-size: 1.3125em;
+        line-height: 1.96875em;
 }
