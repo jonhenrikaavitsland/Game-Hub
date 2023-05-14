@@ -76,3 +76,43 @@ body {
         font-size: 1.3125em;
         line-height: 1.96875em;
 }
+.game-title {
+    text-decoration: none;
+    color: #f2f2f2;
+    font-family: 'Teko', Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 1.75em;
+    line-height: 2.625em;
+}
+
+.headline {
+    font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.3125em;
+    line-height: 3.46875em;
+}
+
+.price {
+    font-family: 'Teko', Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    font-size: 1.75em;
+    line-height: 2.625em;
+}
+
+.general-text {
+    font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.clear {
+    text-decoration: none;
+    color: #1aff00;
+}
+
+.sub-headline {
+    font-family: 'Teko', Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 1.75em;
+    line-height: 2.625;
+}
