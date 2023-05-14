@@ -12,3 +12,38 @@ body {
 .green-text {
     color: #1aff00;
 }
+.cta-hero-image {
+    background-color: #1d2540;
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.cta-explore {
+    text-decoration: none;
+    color: #1aff00;
+}
+
+.cta-advertisment {
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.cta-add-to-cart {
+    background-color: #01403A;
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.cta-pay-now {
+    color: #f2f2f2;
+}
+
+.links-about {
+    text-decoration: none;
+    color: #1aff00;
+}
+
+.send-button {
+    text-decoration: none;
+    color: #f2f2f2;
+}
