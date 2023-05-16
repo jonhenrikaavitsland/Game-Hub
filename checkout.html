@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat:wght@500;600&family=Teko:wght@400;500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat:wght@400;500;600&family=Teko:wght@400;500&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -17,12 +17,12 @@
 <body>
     <header>
         <img src="#" alt="Game Hub Logo">
-        <a href="#">Sign in / Register</a>
+        <a href="#" class="font-4">Sign in / Register</a>
         <div>
             <img src="#" alt="account">
             <img src="#" alt="cart">
         </div>
-        <nav>
+        <nav class="font-2">
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="games.html">GAMES</a></li>
@@ -32,48 +32,54 @@
         </nav>
     </header>
     <main>
-        <div class="bg-blue">
+        <div class="bg-blue font-4">
             <p><a href="index.html">Home</a> > <span class="green">Checkout</span></p>
         </div>
         <section class="bg-blue">
             <h1 class="font-3">Cart:</h1>
             <div>
                 <img src="#" alt="cover image Assassin">
-                <p>Assassin</p>
+                <p class="font-5">Assassin</p>
                 <p>this is a form</p>
                 <img src="#" alt="cancel icon">
-                <p>€ 25.99</p>
+                <p class="font-6">€ 25.99</p>
             </div>
-            <p>Original price:</p>
-            <p>Discount:</p>
-            <p>Your price:</p>
-            <p>€ 25.99</p>
-            <p>-5.20</p>
-            <p class="green">€ 20.79</p>
+            <div class="font-4">
+                <p>Original price:</p>
+                <p>Discount:</p>
+                <p>Your price:</p>
+            </div>
+            <div class="font-6">
+                <p>€ 25.99</p>
+                <p>-5.20</p>
+                <p class="green">€ 20.79</p>
+            </div>
+
         </section>
         <section class="bg-blue">
-            <h2>Pay by CreditCard</h2>
+            <h2 class="font-1">Pay by CreditCard</h2>
                 <p>this is a payment form</p>
                 <a href="Success.html" class="font-2">PAY NOW</a>
-            <div>
+            <div class="bg-white black">
                 <img src="#" alt="VISA logo">
                 <img src="#" alt="Mastercard logo">
-                <h3>Your payment is:</h3>
-                <ul>
-                    <li>Fast</li>
-                    <li>Secure</li>
-                    <li>Flexible</li>
-                    <li>Convenient</li>
-                </ul>
-                <h4>€ 20.79 This is the total amount charged to your card. <br>The card will show on your statement as "GHUB"
+                <h3 class="font-8">Your payment is:</h3>
+                <div class="font-4">
+                    <ul>
+                        <li>Fast</li>
+                        <li>Secure</li>
+                        <li>Flexible</li>
+                        <li>Convenient</li>
+                    </ul>
+                </div>
+                <h4 class="font-9">€ 20.79 This is the total amount charged to your card. <br>The card will show on your statement as
+                    "GHUB"
                 </h4>
             </div>
         </section>
     </main>
-    <footer>
-        <div>
-            &copy; Game Hub
-        </div>
+    <footer class="font-4">
+        &copy; Game Hub
     </footer>
 </body>
 
