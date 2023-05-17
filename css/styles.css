@@ -46,3 +46,20 @@ a {
   min-height: 92vh;
 }
 
+/* Ad */
+.advert {
+  background-image: url(../images/todd-trapani-p9Vz9dyNbnU-unsplash\ \(2\)\ \(1\).jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: left;
+  background-position-y: top;
+}
+
+/* Footer */
+.footer-image {
+  background-image: url(../images/enrique-guzman-egas-gSstgCAgd3U-unsplash-cropped-resized.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: left;
+  background-position-y: top;
+}
