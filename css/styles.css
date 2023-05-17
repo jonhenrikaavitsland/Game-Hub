@@ -17,8 +17,8 @@ body {
 
 .bg-white {
     background-color: #f2f2f2;
-
 }
+
 .green {
     color: #1aff00;
 }
@@ -31,83 +31,18 @@ body {
     color: #0d0d0d;
 }
 
-.font-1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 1.3125em;
-    line-height: 1.96875em;
-}
-
-.font-2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 1.3125em;
-    line-height: 1.96875em;
-}
-
-.font-3 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 2.3125em;
-    line-height: 3.46875em;
-}
-
-.font-4 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 1em;
-    line-height: 1.5em;
-}
-
-.font-5 {
-    font-family: 'Teko', sans-serif;
-    font-weight: 400;
-    font-size: 1.75em;
-    line-height: 2.625em;
-}
-
-.font-6 {
-    font-family: 'Teko', sans-serif;
-        font-weight: 500;
-        font-size: 1.75em;
-        line-height: 2.625em;
-    }
-    
-    .font-7 {
-        font-family: 'Teko', sans-serif;
-        font-weight: 500;
-        font-size: 4.6875em;
-        line-height: 7.03125em
-    }
-    
-    .font-8 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
-        font-size: 1em;
-        line-height: 1.5em;
-    }
-    
-    .font-9 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 400;
-        font-size: 1em;
-        line-height: 1.5em;
-    }
-    
-    .font-10 {
-        font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 1.75em;
-    line-height: 2.625em;
-}
-
-.font-11 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 1.3125em;
-    line-height: 1.96875em;
-}
 a {
-    text-decoration: none;
-    color: #f2f2f2;
+  text-decoration: none;
+  color: #f2f2f2;
 }
+
+/* Home page */
+.hero-image {
+  background-image: url(../images/minh-pham-AHCmAX0k_J4-unsplash-cropped.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: top;
+  min-height: 92vh;
+}
+
