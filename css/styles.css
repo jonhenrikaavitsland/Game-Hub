@@ -1,34 +1,34 @@
 body {
-    background-color: #01403A;
-    color: #f2f2f2;
+  background-color: #01403A;
+  color: #f2f2f2;
 }
 
 .bg-blue {
-    background-color: #1d2540;
+  background-color: #1d2540;
 }
 
 .bg-black {
-    background-color: #0d0d0d;
+  background-color: #0d0d0d;
 }
 
 .bg-green {
-    background-color: #01403A;
+  background-color: #01403A;
 }
 
 .bg-white {
-    background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
 .green {
-    color: #1aff00;
+  color: #1aff00;
 }
 
 .green2 {
-    color: #01403A;
+  color: #01403A;
 }
 
 .black {
-    color: #0d0d0d;
+  color: #0d0d0d;
 }
 
 a {
@@ -39,11 +39,11 @@ a {
 /* Home page */
 .hero-image {
   background-image: url(../images/minh-pham-AHCmAX0k_J4-unsplash-cropped.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position-x: left;
   background-position-y: top;
-  min-height: 92vh;
+  min-height: 70vh;
 }
 
 /* Ad */
@@ -59,7 +59,17 @@ a {
 .footer-image {
   background-image: url(../images/enrique-guzman-egas-gSstgCAgd3U-unsplash-cropped-resized.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position-x: left;
   background-position-y: top;
+}
+
+/* Assassin page */
+.hero-face {
+  background-image: url(../images/assassin-cropped-face.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: left;
+  background-position-y: top;
+  padding: 20vh;
 }
