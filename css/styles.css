@@ -53,6 +53,9 @@ a {
   min-height: 50vh;
 }
 
+.cover-img {
+  max-width: 58.4%;
+}
 /* Ad */
 .advert {
   background-image: url(../images/todd-trapani-p9Vz9dyNbnU-unsplash\ \(2\)\ \(1\).jpg);
