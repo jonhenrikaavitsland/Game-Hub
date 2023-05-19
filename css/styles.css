@@ -46,11 +46,12 @@ a {
 /* Home page */
 .hero-image {
   background-image: url(../images/minh-pham-AHCmAX0k_J4-unsplash-cropped.jpg);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position-x: left;
   background-position-y: top;
-  min-height: 70vh;
+  max-width: 375px;
+    min-height: 20vh;
 }
 
 /* Ad */
