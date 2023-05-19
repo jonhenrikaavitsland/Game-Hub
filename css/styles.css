@@ -59,15 +59,6 @@ a {
   background-position-y: top;
 }
 
-/* Footer */
-.footer-image {
-  background-image: url(../images/enrique-guzman-egas-gSstgCAgd3U-unsplash-cropped-resized.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-x: left;
-  background-position-y: top;
-}
-
 /* Assassin page */
 .hero-face {
   background-image: url(../images/assassin-cropped-face.jpg);
