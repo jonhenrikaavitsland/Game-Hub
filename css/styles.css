@@ -104,3 +104,8 @@ a {
   background-position-y: top;
   padding: 10vh;
 }
+
+/* Footer */
+.media-icons {
+  display: inline-flex;
+}
