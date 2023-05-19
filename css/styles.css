@@ -53,9 +53,6 @@ a {
   min-height: 50vh;
 }
 
-.cover-img {
-  max-width: 58.4%;
-}
 /* Ad */
 .advert {
   background-image: url(../images/todd-trapani-p9Vz9dyNbnU-unsplash\ \(2\)\ \(1\).jpg);
@@ -63,6 +60,11 @@ a {
   background-size: contain;
   background-position-x: left;
   background-position-y: top;
+  min-height: 40vh;
+  }
+  
+  .stroke-1 {
+    border: 1px solid rgba(26, 255, 0, 0.2);
 }
 
 /* Assassin page */
