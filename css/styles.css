@@ -43,15 +43,14 @@ a {
   color: #f2f2f2;
 }
 
-/* Home page */
+/* Index page mobile*/
 .hero-image {
-  background-image: url(../images/minh-pham-AHCmAX0k_J4-unsplash-cropped.jpg);
-  background-size: cover;
+  background-image: url(../images/hero-image-mobile.jpg);
+    background-size: contain;
   background-repeat: no-repeat;
   background-position-x: left;
   background-position-y: top;
-  max-width: 375px;
-    min-height: 50vh;
+  min-height: 40vh;
 }
 
 /* Ad */
