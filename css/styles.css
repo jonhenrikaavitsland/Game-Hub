@@ -3,6 +3,28 @@ body {
   color: #f2f2f2;
 }
 
+nav ul {
+  padding: 0px;
+}
+
+nav li {
+  display: inline-block;
+  background-color: #01403A;
+}
+
+nav a {
+  padding: 21px;
+}
+
+.media {
+  list-style-type: none;
+}
+
+
+a {
+  text-decoration: none;
+  color: #f2f2f2;
+}
 .bg-blue {
   background-color: #1d2540;
 }
@@ -38,10 +60,6 @@ body {
 .blue {
   color: #1d2540;
 }
-a {
-  text-decoration: none;
-  color: #f2f2f2;
-}
 
 /* Index page mobile*/
 .hero-image {
@@ -56,6 +74,7 @@ a {
 .cover-img {
   max-width: 58.4%;
 }
+
 /* Ad */
 .advert {
   background-image: url(../images/todd-trapani-p9Vz9dyNbnU-unsplash\ \(2\)\ \(1\).jpg);
