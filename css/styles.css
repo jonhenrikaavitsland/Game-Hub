@@ -207,7 +207,7 @@ nav a {
 /* Index page mobile*/
 .hero-image {
   background-image: url(../images/hero-image-mobile.jpg);
-    background-size: contain;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position-x: left;
   background-position-y: top;
@@ -228,15 +228,15 @@ nav a {
 .hero-face {
   background-image: url(../images/assassin-cropped-face.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position-x: left;
   background-position-y: top;
-  padding: 25vh;
+  padding: 11.8vh;
 }
 
 /* About page */
 .about-img {
-  background-image: url(../images/harsh-rhZf5tE-l_o-unsplash\ \(1\).jpg);
+  background-image: url(../images/about-image.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: left;
@@ -265,6 +265,15 @@ nav a {
   max-width: 22.67%;
 }
 
+/* Checkout page */
+.cover-checkout {
+  max-width: 29.07%;
+}
+
+/* Assassin page */
+.playbox-icon {
+  max-width: 30.53%;
+}
 
 /*
 =========
