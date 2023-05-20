@@ -1,5 +1,38 @@
+/*
+=================
+Table of contents
+=================
+
+1. Global styles
+
+2. Typography
+
+3. Colors
+  3.1. Background colors
+  3.2. Colors
+
+4. Background images
+
+5. Classes
+
+6. Footer
+*/
+
+
+
+/*
+================
+1. Global styles
+================
+*/
+
 body {
   background-color: #01403A;
+  color: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
   color: #f2f2f2;
 }
 
@@ -16,15 +49,109 @@ nav a {
   padding: 15px;
 }
 
-.media {
-  list-style-type: none;
+/*
+=============
+2. Typography
+=============
+*/
+
+.font-1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.3125em;
+  line-height: 1.96875em;
 }
 
-
-a {
-  text-decoration: none;
-  color: #f2f2f2;
+.font-2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.3125em;
+  line-height: 1.96875em;
 }
+
+.font-3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 2.3125em;
+  line-height: 3.46875em;
+}
+
+.font-4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.font-5 {
+  font-family: "Teko", sans-serif;
+  font-weight: 400;
+  font-size: 1.75em;
+  line-height: 2.625em;
+}
+
+.font-6 {
+  font-family: "Teko", sans-serif;
+  font-weight: 500;
+  font-size: 1.75em;
+  line-height: 2.625em;
+}
+
+.font-7 {
+  font-family: "Teko", sans-serif;
+  font-weight: 500;
+  font-size: 4.6875em;
+  line-height: 7.03125em;
+}
+
+.font-8 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.font-9 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.font-10 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.75em;
+  line-height: 2.625em;
+}
+
+.font-11 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.3125em;
+  line-height: 1.96875em;
+}
+
+.font-12 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.75em;
+  line-height: 2.625em;
+}
+
+/*
+=========
+3. Colors
+=========
+*/
+
+
+/*
+----------------------
+3.1. Background colors
+----------------------
+*/
+
 .bg-blue {
   background-color: #1d2540;
 }
@@ -40,6 +167,12 @@ a {
 .bg-white {
   background-color: #f2f2f2;
 }
+
+/*
+-----------
+3.2. Colors
+-----------
+*/
 
 .green {
   color: #1aff00;
@@ -61,6 +194,12 @@ a {
   color: #1d2540;
 }
 
+/*
+====================
+4. Background images
+====================
+*/
+
 /* Index page mobile*/
 .hero-image {
   background-image: url(../images/hero-image-mobile.jpg);
@@ -71,10 +210,6 @@ a {
   min-height: 50vh;
 }
 
-.cover-img {
-  max-width: 58.4%;
-}
-
 /* Ad */
 .advert {
   background-image: url(../images/todd-trapani-p9Vz9dyNbnU-unsplash\ \(2\)\ \(1\).jpg);
@@ -83,7 +218,7 @@ a {
   background-position-x: left;
   background-position-y: top;
   min-height: 35vh;
-  }
+}
 
 /* Assassin page */
 .hero-face {
@@ -105,7 +240,28 @@ a {
   padding: 10vh;
 }
 
-/* Footer */
+/*
+==========
+5. Classes
+==========
+*/
+
+/* Cover images at index page*/
+.cover-img {
+  max-width: 58.4%;
+}
+
+/*
+=========
+6. Footer
+=========
+*/
+
 .media-icons {
   display: inline-flex;
+}
+
+/* Removes bullets from listed items*/
+.bullet-remove {
+  list-style-type: none;
 }
