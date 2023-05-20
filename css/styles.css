@@ -15,7 +15,9 @@ Table of contents
 
 5. Classes
 
-6. Footer
+6. Buttons
+
+7. Footer
 */
 
 
@@ -275,9 +277,32 @@ nav a {
   max-width: 30.53%;
 }
 
+/* Contact page */
+.form__input {
+  display: block;
+}
+
+
+/*
+==========
+6. Buttons
+==========
+*/
+
+/* Contact page */
+
+#btn-contact {
+  background-color: #1d2540;
+  color: #f2f2f2;
+  border-width: 1px;
+  border-color: #1aff00;
+  border-radius: 5px;
+}
+
+
 /*
 =========
-6. Footer
+7. Footer
 =========
 */
 
