@@ -49,6 +49,7 @@ nav a {
   padding: 15px;
 }
 
+
 /*
 =============
 2. Typography
@@ -139,6 +140,7 @@ nav a {
   line-height: 2.625em;
 }
 
+
 /*
 =========
 3. Colors
@@ -168,6 +170,7 @@ nav a {
   background-color: #f2f2f2;
 }
 
+
 /*
 -----------
 3.2. Colors
@@ -193,6 +196,7 @@ nav a {
 .blue {
   color: #1d2540;
 }
+
 
 /*
 ====================
@@ -240,16 +244,27 @@ nav a {
   padding: 10vh;
 }
 
+
 /*
 ==========
 5. Classes
 ==========
 */
 
-/* Cover images at index page*/
-.cover-img {
-  max-width: 58.4%;
+/* Index page */
+.cover-index {
+  max-width: 45.6%;
 }
+
+.cover-carousel {
+  max-width: 40%;
+}
+
+/* Games page */
+.cover-games {
+  max-width: 22.67%;
+}
+
 
 /*
 =========
