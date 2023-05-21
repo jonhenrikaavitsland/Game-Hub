@@ -14,95 +14,97 @@
 </head>
 
 <body>
-  <header>
-    <img src="#" alt="Game Hub Logo">
-    <div>
-      <i class="fa-solid fa-user"></i>
-      <i class="fa-solid fa-cart-shopping"></i>
-    </div>
-    <nav class="font-4">
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="games.html">GAMES</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <div class="bg-blue font-4">
-      <p><a href="index.html">Home</a> > <span class="green">Checkout</span></p>
-    </div>
-    <section aria-labelledby="shoppingcart" class="bg-blue">
-      <h1 class="font-3">Cart:</h1>
-      <div class="bg-white">
-        <img src="images/covers/assassin_468-600.jpg" alt="cover image Assassin" class="cover-checkout">
-        <p class="font-5 blue">Assassin</p>
-        <p>this is a form</p>
-        <a href="games.html"></a>
-        <p class="font-6 blue">€ 25.99</p>
-        <a href="games.html" class="blue font-4">Remove</a>
+  <div class="content-wrap">
+    <header>
+      <img src="#" alt="Game Hub Logo">
+      <div>
+        <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
       </div>
-      <div class="font-4">
-        <p>Original price: <span class="font-6">€ 25.99</span></p>
-        <p>Discount: <span class="font-6">-5.20</span></p>
-        <strong>Your price: <span class="green font-6">€ 20.79</span></strong>
+      <nav class="font-4">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="games.html">GAMES</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="bg-blue font-4">
+        <p><a href="index.html">Home</a> > <span class="green">Checkout</span></p>
       </div>
-    </section>
-    <section aria-labelledby="pay by creditcard" class="bg-blue">
-      <h2 class="font-11">Pay by CreditCard</h2>
-      <div class="bg-white">
-        <img src="images/vbm_elec_pos_blu_2021.png" alt="logo visa" class="width">
-        <img src="images/mc_symbol_opt_73_3x.png" alt="logo mastercard" class="width">
-      </div>
-      <form action="Success.html">
-        <label for="name">Name of the card holder</label>
-        <input type="text" name="name" id="name" required class="form__input" placeholder="Name as on the card">
-        <label for="card">Card number:</label>
-        <input type="tel" name="card" id="card" minlength="16" maxlength="16" required class="form__input" placeholder="16 numbers">
-        <p>Expiration date:</p>
-        <div>
-          <label for="month">Month</label>
-          <label for="year">Year</label>
+      <section aria-labelledby="shoppingcart" class="bg-blue">
+        <h1 class="font-3">Cart:</h1>
+        <div class="bg-white">
+          <img src="images/covers/assassin_468-600.jpg" alt="cover image Assassin" class="cover-checkout">
+          <p class="font-5 blue">Assassin</p>
+          <p>this is a form</p>
+          <a href="games.html"></a>
+          <p class="font-6 blue">€ 25.99</p>
+          <a href="games.html" class="blue font-4">Remove</a>
         </div>
-        <div class="display-inline">
-          <select name="month" id="month" class="form__input">
-            <option value="01">01</option>
-            <option value="02">02</option>
-            <option value="03">03</option>
-            <option value="04">04</option>
-            <option value="05">05</option>
-            <option value="06">06</option>
-            <option value="07">07</option>
-            <option value="08">08</option>
-            <option value="09">09</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-          </select>
-          <select name="year" id="year">
-            <option value="23">23</option>
-            <option value="24">24</option>
-            <option value="25">25</option>
-            <option value="26">26</option>
-            <option value="27">27</option>
-            <option value="28">28</option>
-            <option value="29">29</option>
-            <option value="30">30</option>
-            <option value="31">31</option>
-            <option value="32">32</option>
-            <option value="33">33</option>
-          </select>
+        <div class="font-4">
+          <p>Original price: <span class="font-6">€ 25.99</span></p>
+          <p>Discount: <span class="font-6">-5.20</span></p>
+          <strong>Your price: <span class="green font-6">€ 20.79</span></strong>
         </div>
-        <label for="ccv">CCV</label>
-        <input type="tel" name="ccv" id="ccv" required minlength="3" maxlength="3" placeholder="123">
-        <input type="submit" value="PAY NOW" class="font-9 form__input" id="cta-pay">
-      </form>
-    </section>
-  </main>
-  <footer class="font-4">
-    &copy; Game Hub
-  </footer>
+      </section>
+      <section aria-labelledby="pay by creditcard" class="bg-blue">
+        <h2 class="font-11">Pay by CreditCard</h2>
+        <div class="bg-white">
+          <img src="images/vbm_elec_pos_blu_2021.png" alt="logo visa" class="width">
+          <img src="images/mc_symbol_opt_73_3x.png" alt="logo mastercard" class="width">
+        </div>
+        <form action="Success.html">
+          <label for="name">Name of the card holder</label>
+          <input type="text" name="name" id="name" required class="form__input" placeholder="Name as on the card">
+          <label for="card">Card number:</label>
+          <input type="tel" name="card" id="card" minlength="16" maxlength="16" required class="form__input" placeholder="16 numbers">
+          <p>Expiration date:</p>
+          <div>
+            <label for="month">Month</label>
+            <label for="year">Year</label>
+          </div>
+          <div class="display-inline">
+            <select name="month" id="month" class="form__input">
+              <option value="01">01</option>
+              <option value="02">02</option>
+              <option value="03">03</option>
+              <option value="04">04</option>
+              <option value="05">05</option>
+              <option value="06">06</option>
+              <option value="07">07</option>
+              <option value="08">08</option>
+              <option value="09">09</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
+            <select name="year" id="year">
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+              <option value="31">31</option>
+              <option value="32">32</option>
+              <option value="33">33</option>
+            </select>
+          </div>
+          <label for="ccv">CCV</label>
+          <input type="tel" name="ccv" id="ccv" required minlength="3" maxlength="3" placeholder="123">
+          <input type="submit" value="PAY NOW" class="font-9 form__input" id="cta-pay">
+        </form>
+      </section>
+    </main>
+    <footer class="font-4">
+      &copy; Game Hub
+    </footer>
+  </div>
 </body>
 
 </html>

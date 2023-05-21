@@ -28,6 +28,7 @@ Table of contents
 body {
   background-color: #01403A;
   color: #f2f2f2;
+  margin: 0;
 }
 
 a {
@@ -48,6 +49,11 @@ nav a {
   padding: 15px;
 }
 
+.content-wrap {
+  margin: 0;
+  min-width: 375px;
+  max-width: 600px;
+}
 
 /*
 =============
