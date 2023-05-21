@@ -37,31 +37,29 @@
   <main>
     <section aria-labelledby="contactform" class="bg-blue">
       <h1 class="font-3">Contact</h1>
-      <div>
-        <form action="contactform-success.php" method="POST">
-          <label for="first-name">First name:</label>
-          <input type="text" name="first-name" id="first-name" required class="form__input">
-          <label for="last-name">Last name:</label>
-          <input type="text" name="last-name" id="last-name" required class="form__input">
-          <label for="email">E-mail adress:</label>
-          <input type="email" name="email" id="email" required class="form__input">
-          <label for="phone">Telephone number:</label>
-          <input type="tel" name="phone" id="phone" class="form__input">
-          <label for="message">Your message:</label>
-          <textarea name="message" id="message" class="form__input"></textarea>
-          <p>Do you want us to give you a call?</p>
-          <input type="radio" name="call-option" id="answer-yes" class="form__input">
-          <label for="answer-yes">Yes</label>
-          <input type="radio" name="call-option" id="answer-no" class="form__input">
-          <label for="answer-no">No</label>
-          <input type="submit" value="SEND" id="btn-contact" class="font-4 form__input">
-        </form>
-      </div>
+      <form action="contact-success.php" method="POST">
+        <label for="first-name">First name:</label>
+        <input type="text" name="first-name" id="first-name" required class="form__input">
+        <label for="last-name">Last name:</label>
+        <input type="text" name="last-name" id="last-name" required class="form__input">
+        <label for="email">E-mail adress:</label>
+        <input type="email" name="email" id="email" required class="form__input">
+        <label for="phone">Telephone number:</label>
+        <input type="tel" name="phone" id="phone" class="form__input">
+        <label for="message">Your message:</label>
+        <textarea name="message" id="message" class="form__input"></textarea>
+        <p>Do you want us to give you a call?</p>
+        <input type="radio" name="call-option" id="answer-yes" class="form__input">
+        <label for="answer-yes">Yes</label>
+        <input type="radio" name="call-option" id="answer-no" class="form__input">
+        <label for="answer-no">No</label>
+        <input type="submit" value="SEND" id="btn-contact" class="font-4 form__input">
+      </form>
     </section>
   </main>
   <footer class="font-4">
     <div>
-      <ul class="bullet-remove media-icons">
+      <ul class="bullet-remove display-inline">
         <li><img src="#" alt="media1"/></li>
         <li><img src="#" alt="media2"/></li>
         <li><img src="#" alt="media3"/></li>

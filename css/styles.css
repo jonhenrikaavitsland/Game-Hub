@@ -4,19 +4,15 @@ Table of contents
 =================
 
 1. Global styles
-
 2. Typography
-
 3. Colors
   3.1. Background colors
   3.2. Colors
-
 4. Background images
-
 5. Classes
-
+  5.1. Single-use classes
+  5.2. Multi-use classes
 6. Buttons
-
 7. Footer
 */
 
@@ -253,6 +249,13 @@ nav a {
 ==========
 */
 
+
+/*
+---------------------
+5.1. Single-use classes
+---------------------
+*/
+
 /* Index page */
 .cover-index {
   max-width: 45.6%;
@@ -277,7 +280,17 @@ nav a {
   max-width: 30.53%;
 }
 
-/* Contact page */
+
+/*
+----------------------
+5.2. Multi-use classes
+----------------------
+*/
+
+.display-inline {
+  display: inline-flex;
+}
+
 .form__input {
   display: block;
 }
@@ -290,8 +303,16 @@ nav a {
 */
 
 /* Contact page */
-
 #btn-contact {
+  background-color: #1d2540;
+  color: #f2f2f2;
+  border-width: 1px;
+  border-color: #1aff00;
+  border-radius: 5px;
+}
+
+/* Checkout page */
+#cta-pay {
   background-color: #1d2540;
   color: #f2f2f2;
   border-width: 1px;
@@ -305,10 +326,6 @@ nav a {
 7. Footer
 =========
 */
-
-.media-icons {
-  display: inline-flex;
-}
 
 /* Removes bullets from listed items*/
 .bullet-remove {
