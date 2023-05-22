@@ -83,6 +83,9 @@ nav a {
   line-height: 3.46875em;
 }
 
+label,
+input,
+textarea,
 .font-4 {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -400,7 +403,7 @@ nav a {
 
 /* Radio button */
 .btn {
-  width: 1.75rem;
-  height: 1.75rem;
-  margin: 1.875rem 0rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  margin: 1.875rem 0.625rem;
 }
