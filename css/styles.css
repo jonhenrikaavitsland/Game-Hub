@@ -32,9 +32,17 @@ body {
   margin: 0;
 }
 
+header {
+  block-size: 8.1875rem;
+}
+
 a {
   text-decoration: none;
   color: #f2f2f2;
+}
+
+nav {
+  block-size: 2.625rem;
 }
 
 nav ul {
@@ -46,15 +54,19 @@ nav li {
   background-color: #01403A;
 }
 
-nav a {
-  padding: 15px;
-}
-
 .content-wrap {
   margin: 0;
   min-width: 375px;
   max-width: 600px;
 }
+
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0rem;
+}
+
 
 /*
 =============
@@ -387,6 +399,12 @@ select,
   padding: 1.5rem 4rem;
   margin: 10rem 0rem;
 }
+
+.cta-nav {
+  padding: 0.6875rem 2.626rem;
+  display: inline;
+}
+
 
 /*
 =========
