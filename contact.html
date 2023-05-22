@@ -29,9 +29,9 @@
           <li><a href="#" class="green">CONTACT</a></li>
         </ul>
       </nav>
-      <form action="#" role="search" method="get">
-        <div>
-          <input type="search" name="q" id="seach-site" placeholder="Search the web page required>
+        <div>      
+          <form action="#" role="search" method="get">
+          <input type="search" name="q" id="seach-site" placeholder="Search the web page" required class="bar">
         </div>
       </form>
     </header>
@@ -40,21 +40,21 @@
         <h1 class="font-3">Contact</h1>
         <form action="contact-success.php" method="POST">
           <label for="first-name">First name:</label>
-          <input type="text" name="first-name" id="first-name" required class="form__input" placeholder="First and middle name(s)">
+          <input type="text" name="first-name" id="first-name" required class="form__input bar" placeholder="First and middle name(s)">
           <label for="last-name">Last name:</label>
-          <input type="text" name="last-name" id="last-name" required class="form__input" placeholder="Your surename">
+          <input type="text" name="last-name" id="last-name" required class="form__input bar" placeholder="Your surename">
           <label for="email">E-mail adress:</label>
-          <input type="email" name="email" id="email" required class="form__input" placeholder="your@e-mail.com">
+          <input type="email" name="email" id="email" required class="form__input bar" placeholder="your@e-mail.com">
           <label for="phone">Telephone number:</label>
-          <input type="tel" name="phone" id="phone" class="form__input" placeholder="Telephone number">
+          <input type="tel" name="phone" id="phone" class="form__input bar" placeholder="Telephone number">
           <label for="message">Your message:</label>
-          <textarea name="message" id="message" class="form__input" placeholder="What can we help you with?"></textarea>
+          <textarea name="message" id="message" class="form__input msg-bar" placeholder="What can we help you with?"></textarea>
           <p>Do you want us to give you a call?</p>
-          <input type="radio" name="call-option" id="answer-yes" class="form__input">
+          <input type="radio" name="call-option" id="answer-yes" class="form__input btn">
           <label for="answer-yes">Yes</label>
-          <input type="radio" name="call-option" id="answer-no" class="form__input">
+          <input type="radio" name="call-option" id="answer-no" class="form__input btn">
           <label for="answer-no">No</label>
-          <input type="submit" value="SEND" id="btn-contact" class="font-4 form__input">
+          <input type="submit" value="SEND" class="font-4 form__input cta">
         </form>
       </section>
     </main>
@@ -75,8 +75,8 @@
           <li>&copy; Game Hub</li>
         </ul>
       </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
 </body>
 
 </html>

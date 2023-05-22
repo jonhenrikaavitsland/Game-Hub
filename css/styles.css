@@ -14,6 +14,7 @@ Table of contents
   5.2. Multi-use classes
 6. Buttons
 7. Footer
+8. Forms
 
 */
 
@@ -334,22 +335,14 @@ nav a {
   padding: 1rem 2rem;
 }
 
-/* Contact page */
-#btn-contact {
+/* Used on checkout and contact form */
+.cta {
   background-color: #1d2540;
   color: #f2f2f2;
-  border-width: 1px;
+  border-width: 0.1rem;
   border-color: #1aff00;
-  border-radius: 5px;
-}
-
-/* Checkout page */
-#cta-pay {
-  background-color: #1d2540;
-  color: #f2f2f2;
-  border-width: 1px;
-  border-color: #1aff00;
-  border-radius: 5px;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
 }
 
 /* Advertisement */
@@ -384,3 +377,30 @@ nav a {
 }
 
 
+/*
+========
+8. Forms
+========
+*/
+
+/* Search bar and also used at contact form*/
+.bar {
+  width: 35.5rem;
+  height: 4.8rem;
+  border-radius: 0.5rem;
+  margin: 0rem 0rem 3.4rem 0rem;
+}
+
+/* Contact form */
+.msg-bar {
+  width: 35.5rem;
+  height: 19.2rem;
+  border-radius: 0.5rem;
+}
+
+/* Radio button */
+.btn {
+  width: 4rem;
+  height: 4rem;
+  margin: 3rem 0rem;
+}
