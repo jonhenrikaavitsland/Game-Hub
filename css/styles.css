@@ -288,12 +288,17 @@ select,
 }
 
 .width {
-  max-width: 14.4%;
+  max-width: 40%;
 }
 
 /* Assassin page */
 .pb-icon {
   max-width: 30.53%;
+}
+
+.bg-short {
+  inline-size: 7.3125rem;
+  block-size: 2rem;
 }
 
 
