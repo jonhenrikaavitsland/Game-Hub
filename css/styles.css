@@ -284,9 +284,12 @@ select,
 
 /* Checkout page */
 .cover-checkout {
-  max-width: 29.07%;
+  max-width: 30.7%;
+  margin: 0.625rem;
+  float: left;
 }
 
+/* Checkout page / payment logo */
 .width {
   max-width: 40%;
 }
@@ -296,9 +299,17 @@ select,
   max-width: 30.53%;
 }
 
+/* Checkout page / background for payment logo*/
 .bg-short {
   inline-size: 7.3125rem;
   block-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.bg-big {
+  inline-size: 22.1875rem;
+  block-size: 10rem;
+  border-radius: 0.3125rem;
 }
 
 
@@ -316,6 +327,9 @@ select,
   display: block;
 }
 
+.inline {
+  display: inline;
+}
 
 /*
 ==========
