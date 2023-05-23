@@ -40,21 +40,21 @@
         <h1>Contact</h1>
         <form action="contact-success.php" method="POST">
           <label for="first-name">First name:</label>
-          <input type="text" name="first-name" id="first-name" required placeholder="First and middle name(s)">
+          <input type="text" name="first-name" id="first-name" required placeholder="First and middle name(s)" class="form__input">
           <label for="last-name">Last name:</label>
-          <input type="text" name="last-name" id="last-name" required placeholder="Your surename">
+          <input type="text" name="last-name" id="last-name" required placeholder="Your surename" class="form__input">
           <label for="email">E-mail adress:</label>
-          <input type="email" name="email" id="email" required placeholder="your@e-mail.com">
+          <input type="email" name="email" id="email" required placeholder="your@e-mail.com" class="form__input">
           <label for="phone">Telephone number:</label>
-          <input type="tel" name="phone" id="phone" placeholder="Telephone number">
+          <input type="tel" name="phone" id="phone" placeholder="Telephone number" class="form__input">
           <label for="message">Your message:</label>
-          <textarea name="message" id="message" placeholder="What can we help you with?"></textarea>
+          <textarea name="message" id="message" placeholder="What can we help you with?" class="form__textarea"></textarea>
           <p>Do you want us to give you a call?</p>
           <input type="radio" name="call-option" id="answer-yes">
           <label for="answer-yes">Yes</label>
-          <input type="radio" name="call-option" id="answer-no">
+          <input type="radio" name="call-option" id="answer-no" class="form__input">
           <label for="answer-no">No</label>
-          <input type="submit" value="SEND">
+          <input type="submit" value="SEND" class="cta-contact">
         </form>
       </section>
     </main>
