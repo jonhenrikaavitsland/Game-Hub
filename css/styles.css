@@ -68,7 +68,9 @@ h2,
 .cta-explore,
 .cta-sale,
 .cta-advert,
-.btn-link {
+.btn-link,
+.cta-checkout,
+.cta-contact {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1.3125em;
@@ -151,8 +153,14 @@ body,
   color: #f3a8a8;
 }
 
+::placeholder,
 .add-blue {
   color: #1d2540;
+}
+
+input,
+textarea {
+  caret-color: #1aff00;
 }
 
 
@@ -248,7 +256,6 @@ p {
 
 .cart {
   border-radius: 0.3125rem;
-  max-width: 94.67%;
 }
 
 .pay-logo {
@@ -270,10 +277,6 @@ nav li,
 
 .hero-section {
   white-space: nowrap;
-}
-
-section {
-  max-width: 100%;
 }
 
 .cta-contact,
@@ -354,3 +357,23 @@ section {
 8. Forms
 ========
 */
+
+.tbl-1 {
+  height: 3rem;
+  border-radius: 0.3125rem;
+}
+
+textarea {
+  height: 12rem;
+  border-radius: 0.3125rem;
+}
+
+select {
+  height: 3rem;
+  border-radius: 0.3125rem;
+}
+
+.ccv {
+  height: 3rem;
+  border-radius: 0.3125rem;
+}
