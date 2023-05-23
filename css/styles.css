@@ -30,6 +30,10 @@ Table of contents
   max-width: 600px;
 }
 
+a {
+  text-decoration: none;
+}
+
 
 /*
 =============
@@ -91,7 +95,9 @@ h3,
 ----------------------
 */
 
-
+body {
+  background-color: #01403a;
+}
 
 
 /*
@@ -99,7 +105,11 @@ h3,
 3.2. Colors
 -----------
 */
- 
+
+a,
+body {
+  color: #f2f2f2;
+}
 
 
 /*
