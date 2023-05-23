@@ -26,6 +26,9 @@ Table of contents
 ================
 */
 
+.content-wrap {
+  max-width: 600px;
+}
 
 
 /*
@@ -34,27 +37,32 @@ Table of contents
 =============
 */
 
-Body {
+Body,
+input,
+select {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1em;
   line-height: 1.5em;
 }
 
-h1 {
+h1,
+.add-h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 1.75em;
   line-height: 2.625em;
 }
 
-h2 {
+h2,
+.add-h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1.3125em;
   line-height: 1.96875em;
 }
 
+h3,
 .titles {
   font-family: "Teko", sans-serif;
   font-weight: 400;
@@ -83,21 +91,7 @@ h2 {
 ----------------------
 */
 
-.bg-blue {
-  background-color: #1d2540;
-}
 
-.bg-black {
-  background-color: #0d0d0d;
-}
-
-.bg-green {
-  background-color: #01403A;
-}
-
-.bg-white {
-  background-color: #f2f2f2;
-}
 
 
 /*
@@ -105,26 +99,7 @@ h2 {
 3.2. Colors
 -----------
 */
-
-.green {
-  color: #1aff00;
-}
-
-.green2 {
-  color: #01403A;
-}
-
-.black {
-  color: #0d0d0d;
-}
-
-.red {
-  color: #f3a8a8;
-}
-
-.blue {
-  color: #1d2540;
-}
+ 
 
 
 /*
