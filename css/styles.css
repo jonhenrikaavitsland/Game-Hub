@@ -40,6 +40,19 @@ body {
   margin: 0;
 }
 
+nav li {
+  display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+
 /*
 =============
 2. Typography
@@ -245,14 +258,6 @@ textarea {
 5.1. Single-use classes
 ---------------------
 */
-
-h1,
-h2,
-h3,
-h4,
-p {
-  margin: 0;
-}
 
 .cart {
   border-radius: 0.3125rem;
