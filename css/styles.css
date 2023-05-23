@@ -8,7 +8,9 @@ Table of contents
 3. Colors
   3.1. Background colors
   3.2. Colors
-4. Background images
+  3.3. Border colors
+4. Images
+  4.1. Background images
 5. Classes
   5.1. Single-use classes
   5.2. Multi-use classes
@@ -59,7 +61,11 @@ h1,
 }
 
 h2,
-.add-h2 {
+.add-h2,
+.cta-explore,
+.cta-sale,
+.cta-advert,
+.btn-link {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1.3125em;
@@ -95,8 +101,18 @@ h3,
 ----------------------
 */
 
-body {
+body,
+.cta-sale {
   background-color: #01403a;
+}
+
+.cta-explore,
+.btn-link {
+  background-color: #1d2540;
+}
+
+.cta-advert {
+  background-color: #0d0d0d;
 }
 
 
@@ -111,13 +127,57 @@ body {
   color: #f2f2f2;
 }
 
+.cta-explore,
+.add-bright-green,
+.btn-link {
+  color: #1aff00;
+}
+
+.discount {
+  color: #f3a8a8;
+}
+
 
 /*
-====================
-4. Background images
-====================
+------------------
+3.3. Border colors
+------------------
 */
 
+.cta-explore,
+.btn-link  {
+  border-color: #2d3e77;
+}
+
+.cta-sale {
+  border-color: #f2f2f2;
+}
+
+.cta-advert {
+  border-color: #1aff00;
+}
+
+
+/*
+=========
+4. images
+=========
+*/
+
+/* index */
+.new-release {
+  max-width: 45.6%;
+}
+
+.trending {
+  max-width: 40%;
+}
+
+/*
+----------------------
+4.1. Background images
+----------------------
+*/
 
 
 
@@ -142,6 +202,11 @@ body {
 ----------------------
 */
 
+footer li,
+nav li,
+.button-remove {
+  list-style-type: none;
+}
 
 
 /*
@@ -150,7 +215,46 @@ body {
 ==========
 */
 
+.cta-explore {
+  border-style: solid;
+  border-width: 0.125rem;
+  border-radius: 0.3125rem;
+  padding: 0.625rem 1.25rem;
+}
 
+.cta-sale {
+  border-style: solid;
+  border-width: 0.0625rem;
+  border-radius: 0.3125rem;
+  padding: 0.35rem 0.7rem;
+}
+
+.cta-advert {
+  border-style: solid;
+  border-width: 0.09375rem;
+  border-radius: 0.3125rem;
+  padding: 0.625rem 1.5rem;
+}
+
+.btn-link {
+  border-style: solid;
+  border-width: 0.0625rem;
+  border-radius: 0.3125rem;
+  margin: 0.625rem 0rem;
+}
+
+/* Padding for btn-link above to make the links same size */
+.padding-2 {
+  padding: 0.9375em 1.875em;
+}
+
+.padding-1 {
+  padding: 0.9375em 2.05em;
+}
+
+.padding-3 {
+  padding: 0.9375em 2.07em;
+}
 
 /*
 =========
