@@ -36,6 +36,9 @@ a {
   text-decoration: none;
 }
 
+body {
+  margin: 0;
+}
 
 /*
 =============
@@ -107,12 +110,19 @@ body,
 }
 
 .cta-explore,
-.btn-link {
+.btn-link,
+section {
   background-color: #1d2540;
 }
 
-.cta-advert {
+.cta-advert,
+aside {
   background-color: #0d0d0d;
+}
+
+.cart,
+.pay-logo {
+  background-color: #f2f2f2;
 }
 
 
@@ -135,6 +145,10 @@ body {
 
 .discount {
   color: #f3a8a8;
+}
+
+.add-blue {
+  color: #1d2540;
 }
 
 
@@ -164,7 +178,7 @@ body {
 =========
 */
 
-/* index */
+/* Index page */
 .new-release {
   max-width: 45.6%;
 }
@@ -172,6 +186,30 @@ body {
 .trending {
   max-width: 40%;
 }
+
+/* Games page */
+.games {
+  max-width: 45.95%;
+}
+
+/* Assassin page */
+.playbox {
+  max-width: 30.53%;
+}
+
+/* Checkout page */
+.game-img {
+  max-width: 30.7%;
+}
+
+.pay-1 {
+  max-width: 46.15%;
+}
+
+.pay-2 {
+  max-width: 26.5%;
+}
+
 
 /*
 ----------------------
@@ -194,6 +232,22 @@ body {
 ---------------------
 */
 
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+.cart {
+  border-radius: 0.3125rem;
+  max-width: 94.67%;
+}
+
+.pay-logo {
+  max-width: 31.2%;
+}
 
 
 /*
@@ -208,6 +262,13 @@ nav li,
   list-style-type: none;
 }
 
+.hero-section {
+  white-space: nowrap;
+}
+
+section {
+  max-width: 100%;
+}
 
 /*
 ==========
@@ -217,9 +278,9 @@ nav li,
 
 .cta-explore {
   border-style: solid;
-  border-width: 0.125rem;
-  border-radius: 0.3125rem;
-  padding: 0.625rem 1.25rem;
+  border-width: 0.125em;
+  border-radius: 0.3125em;
+  padding: 0.625em 1.25em;
 }
 
 .cta-sale {
