@@ -58,10 +58,14 @@
           <label for="message">Your message:</label>
           <textarea name="message" id="message" placeholder="What can we help you with?" class="form__textarea"></textarea>
           <p>Do you want us to give you a call?</p>
-          <input type="radio" name="call-option" id="answer-yes">
-          <label for="answer-yes">Yes</label>
-          <input type="radio" name="call-option" id="answer-no" class="form__input">
-          <label for="answer-no">No</label>
+          <div>
+            <input type="radio" name="call-option" id="answer-yes" class="btn">
+            <label for="answer-yes">Yes</label>
+          </div>
+          <div>
+            <input type="radio" name="call-option" id="answer-no" class="btn form__input">
+            <label for="answer-no" class="float">No</label>
+          </div>
           <input type="submit" value="SEND" class="cta-contact">
         </form>
       </section>

@@ -342,6 +342,10 @@ nav li,
   display: block;
 }
 
+.btn-link {
+  display: inline-block;
+}
+
 /*
 ==========
 6. Buttons
@@ -416,20 +420,29 @@ nav li,
 
 .tbl-1 {
   height: 3rem;
+  width: 94.67%;
   border-radius: 0.3125rem;
 }
 
 textarea {
   height: 12rem;
+  width: 94.67%;
   border-radius: 0.3125rem;
 }
 
 select {
   height: 3rem;
+  width: 10%;
   border-radius: 0.3125rem;
 }
 
 .ccv {
   height: 3rem;
+  width: 16.53%;
   border-radius: 0.3125rem;
+}
+
+.btn {
+  height: 2rem;
+  width: 2rem;
 }
