@@ -205,6 +205,57 @@ textarea {
 =========
 */
 
+/* Logo */
+.gh-logo,
+.gh-logo-switch {
+  max-width: 15rem;
+}
+
+.gh-logo-switch:active {
+  content: url(../images/logo-checked.png);
+}
+
+/* Icons */
+.icon-cart,
+.icon-log,
+.social-tw,
+.social-li,
+.social-fb,
+.social-yt,
+.social-gt,
+.icon {
+  max-width: 3rem;
+  margin: 0.5rem;
+}
+
+.social-tw:active {
+  content: url(../images/svg/twitter-circle-green.svg);
+}
+
+.social-li:active {
+  content: url(../images/svg/linkedin-circle-green.svg);
+}
+
+.social-fb:active {
+  content: url(../images/svg/facebook-circle-green.svg);
+}
+
+.social-yt:active {
+  content: url(../images/svg/youtube-circle-green.svg);
+}
+
+.social-gt:active {
+  content: url(../images/svg/github-circular-green.svg);
+}
+
+.icon-cart:active {
+  content: url(../images/svg/cart-green.svg);
+}
+
+.icon-log:active {
+  content: url(../images/svg/account-login-green.svg);
+}
+
 /* Index page */
 .new-release {
   max-width: 45.6%;
