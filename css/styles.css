@@ -126,6 +126,8 @@ body,
   background-color: #01403a;
 }
 
+.games-child-2-2-1, .games-child-2-2-2, .games-child-2-2-3, .games-child-2-2-4, .games-child-2-2-5,
+.games-child-2-2-6, .games-child-2-2-7, .games-child-2-2-8, .games-child-2-2-9, .games-child-2-2-10,
 .srch,
 .cta-checkout,
 .cta-contact,
@@ -143,6 +145,10 @@ aside {
 .cart,
 .pay-logo {
   background-color: #f2f2f2;
+}
+
+.games-child-2-2 {
+  background-color: #273151;
 }
 
 
@@ -255,18 +261,11 @@ textarea {
   content: url(../images/svg/account-login-green.svg);
 }
 
-/* Index page */
+/* pictures */
+.games,
+.trending,
 .new-release {
   max-width: 100%;
-}
-
-.trending {
-  max-width: 40%;
-}
-
-/* Games page */
-.games {
-  max-width: 45.95%;
 }
 
 /* Assassin page */
@@ -530,27 +529,27 @@ select {
 */
 
 /* Index Main section */
-.middle-container {
+.main-container {
   display: grid;
   grid-template-columns: 27.2% 45.6% 27.2%;
-  grid-template-rows: min-content min-content min-content min-content;
+  grid-template-rows: min-content;
 }
 
-.middle-child-1 {
+.main-child-1 {
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
 }
 
-.middle-child-2 {
+.main-child-2 {
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
 }
 
-.middle-child-3 {
+.main-child-3 {
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 3;
@@ -562,14 +561,14 @@ select {
 
 
 /* Grid for New releases */
-  .middle-child-3-1 {
+  .main-child-3-1 {
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
 }
 
-.middle-child-3-2 {
+.main-child-3-2 {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
@@ -581,7 +580,7 @@ select {
     justify-items: center;
 }
 
-.middle-child-3-3 {
+.main-child-3-3 {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 3;
@@ -593,7 +592,7 @@ select {
     justify-items: center;
 }
 
-.middle-child-3-4 {
+.main-child-3-4 {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 4;
@@ -605,7 +604,7 @@ select {
     justify-items: center;
 }
 
-.middle-child-3-5 {
+.main-child-3-5 {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 5;
@@ -617,14 +616,14 @@ select {
     justify-items: center;
 }
 
-.middle-child-3-6 {
+.main-child-3-6 {
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 6;
     grid-row-end: 7;
 }
 
-.middle-child-4 {
+.main-child-4 {
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 4;
@@ -637,14 +636,14 @@ select {
 }
 
 /* Grid for Trending now section */
-.middle-child-4-1 {
+.main-child-4-1 {
     grid-column-start: 1;
     grid-column-end: 6;
     grid-row-start: 1;
     grid-row-end: 2;
 }
 
-.middle-child-4-2 {
+.main-child-4-2 {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
@@ -652,14 +651,14 @@ select {
     align-self: center;
 }
 
-.middle-child-4-3 {
+.main-child-4-3 {
     grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 3;
 }
 
-.middle-child-4-4 {
+.main-child-4-4 {
     grid-column-start: 5;
     grid-column-end: 6;
     grid-row-start: 2;
@@ -667,24 +666,173 @@ select {
     align-self: center;
 }
 
-.middle-child-4-5 {
+.main-child-4-5 {
     grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start: 3;
     grid-row-end: 4;
 }
 
-.middle-child-4-6 {
+.main-child-4-6 {
     grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start: 4;
     grid-row-end: 5;
 }
 
-.middle-child-4-7 {
+.main-child-4-7 {
     grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start: 5;
     grid-row-end: 6;
 }
 
+
+/* Games page main section */
+
+.games-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 2, min-content;
+}
+
+.games-child-1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.games-child-2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 3, min-content;
+}
+
+/* Grid for available games section */
+
+.games-child-2-1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: center;
+}
+
+.games-child-2-2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, min-content);
+    gap: 0.5rem;
+}
+
+.games-child-2-3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+/* Grid inside the above grid to get the background effect */
+.games-child-2-2-10,
+.games-child-2-2-9,
+.games-child-2-2-8,
+.games-child-2-2-7,
+.games-child-2-2-6,
+.games-child-2-2-5,
+.games-child-2-2-4,
+.games-child-2-2-3,
+.games-child-2-2-2,
+.games-child-2-2-1 {
+      display: grid;
+      grid-template-columns: 27.5% 45% 27.5%;
+      grid-template-rows: repeat(4, min-content);
+      justify-items: center;
+}
+
+/* Grid inside the above grid to layout products */
+
+/* 
+  Assassin      = gc-2211 - gc-2214
+  Black         = gc-2221 - gc-2224
+  Boxer         = gc-2231 - gc-2234
+  Cyberpunk     = gc-2241 - gc-2244
+  Forge Legend  = gc-2251 - gc-2254
+  Furious       = gc-2261 - gc-2264
+  Ping Pong     = gc-2271 - gc-2274
+  Racing        = gc-2281 - gc-2284
+  Space War     = gc-2291 - gc-2294
+  Super Duper   = gc-22101 - gc-22104
+*/
+
+.gc-22101,
+.gc-2291,
+.gc-2281,
+.gc-2271,
+.gc-2261,
+.gc-2251,
+.gc-2241,
+.gc-2231,
+.gc-2221,
+.gc-2211 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+}
+
+.gc-22102,
+.gc-2292,
+.gc-2282,
+.gc-2272,
+.gc-2262,
+.gc-2252,
+.gc-2242,
+.gc-2232,
+.gc-2222,
+.gc-2212 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+}
+
+.gc-22103,
+.gc-2293,
+.gc-2283,
+.gc-2273,
+.gc-2263,
+.gc-2253,
+.gc-2243,
+.gc-2233,
+.gc-2223,
+.gc-2213 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+}
+
+.gc-22104,
+.gc-2294,
+.gc-2284,
+.gc-2274,
+.gc-2264,
+.gc-2254,
+.gc-2244,
+.gc-2234,
+.gc-2224,
+.gc-2214 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+}
