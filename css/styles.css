@@ -274,6 +274,7 @@ textarea {
 .trending,
 .new-release {
   max-width: 100%;
+  max-height: auto;
   margin-top: 3rem;
 }
 
@@ -809,8 +810,8 @@ select {
 .gc-2232,
 .gc-2222,
 .gc-2212 {
-        grid-column-start: 2;
-        grid-column-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 4;
         grid-row-start: 2;
         grid-row-end: 3;
 }
@@ -825,8 +826,8 @@ select {
 .gc-2233,
 .gc-2223,
 .gc-2213 {
-        grid-column-start: 2;
-        grid-column-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 4;
         grid-row-start: 3;
         grid-row-end: 4;
 }
@@ -841,8 +842,8 @@ select {
 .gc-2234,
 .gc-2224,
 .gc-2214 {
-        grid-column-start: 2;
-        grid-column-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 4;
         grid-row-start: 4;
         grid-row-end: 5;
 }
