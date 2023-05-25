@@ -497,6 +497,9 @@ select {
   grid-row-end: 2;
   justify-self: end;
   align-self: start;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr min-content;
 }
 
 .top-child-3 {
@@ -506,6 +509,21 @@ select {
   grid-row-end: 3;
   justify-self: stretch;
   align-self: stretch;
+}
+
+/* Grid for top-child-2 */
+.tc-21 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.tc-22 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
 
