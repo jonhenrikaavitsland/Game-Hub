@@ -18,7 +18,8 @@ Table of contents
 7. Footer
 8. Forms
 9. Grid
-
+  9.1. Global grids
+  9.2. Grid page by page
 */
 
 
@@ -449,11 +450,17 @@ select {
 
 
 /*
-====
-Grid
-====
+=======
+9. Grid
+=======
 */
 
+
+/*
+-----------------
+9.1. Global grids
+-----------------
+*/
 
 /* Header section */
 .top-container {
@@ -489,6 +496,38 @@ Grid
   align-self: stretch;
 }
 
+
+/* Footer Section */
+
+.bottom-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: min-content min-content;
+}
+
+.bottom-child-1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  justify-self: center;
+  align-self: center;
+}
+
+.bottom-child-2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  justify-self: center;
+}
+
+
+/*
+-----------------------
+9.2. Grids page by page
+-----------------------
+*/
 
 /* Index Main section */
 .middle-container {
@@ -649,27 +688,3 @@ Grid
     grid-row-end: 6;
 }
 
-/* Footer Section */
-
-.bottom-container {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: min-content min-content;
-}
-
-.bottom-child-1 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  justify-self: center;
-  align-self: center;
-}
-
-.bottom-child-2 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  justify-self: center;
-}
