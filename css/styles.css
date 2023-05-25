@@ -126,8 +126,16 @@ body,
   background-color: #01403a;
 }
 
-.games-child-2-2-1, .games-child-2-2-2, .games-child-2-2-3, .games-child-2-2-4, .games-child-2-2-5,
-.games-child-2-2-6, .games-child-2-2-7, .games-child-2-2-8, .games-child-2-2-9, .games-child-2-2-10,
+.gc-221, 
+.gc-222, 
+.gc-223, 
+.gc-224, 
+.gc-225,
+.gc-226, 
+.gc-227, 
+.gc-228, 
+.gc-229, 
+.gc-2210,
 .srch,
 .cta-checkout,
 .cta-contact,
@@ -147,7 +155,7 @@ aside {
   background-color: #f2f2f2;
 }
 
-.games-child-2-2 {
+.gc-22 {
   background-color: #273151;
 }
 
@@ -266,6 +274,7 @@ textarea {
 .trending,
 .new-release {
   max-width: 100%;
+  margin-top: 3rem;
 }
 
 /* Assassin page */
@@ -365,6 +374,7 @@ nav li,
   border-width: 0.0625rem;
   border-radius: 0.3125rem;
   padding: 0.35rem 0.7rem;
+  margin-bottom: 3rem;
 }
 
 /* Advertisment */
@@ -696,14 +706,14 @@ select {
   grid-template-rows: 2, min-content;
 }
 
-.games-child-1 {
+.gc-1 {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
 }
 
-.games-child-2 {
+.gc-2 {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
@@ -715,7 +725,7 @@ select {
 
 /* Grid for available games section */
 
-.games-child-2-1 {
+.gc-21 {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -723,7 +733,7 @@ select {
     justify-self: center;
 }
 
-.games-child-2-2 {
+.gc-22 {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
@@ -734,7 +744,7 @@ select {
     gap: 0.5rem;
 }
 
-.games-child-2-3 {
+.gc-23 {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 3;
@@ -742,16 +752,16 @@ select {
 }
 
 /* Grid inside the above grid to get the background effect */
-.games-child-2-2-10,
-.games-child-2-2-9,
-.games-child-2-2-8,
-.games-child-2-2-7,
-.games-child-2-2-6,
-.games-child-2-2-5,
-.games-child-2-2-4,
-.games-child-2-2-3,
-.games-child-2-2-2,
-.games-child-2-2-1 {
+.gc-2210,
+.gc-229,
+.gc-228,
+.gc-227,
+.gc-226,
+.gc-225,
+.gc-224,
+.gc-223,
+.gc-222,
+.gc-221 {
       display: grid;
       grid-template-columns: 27.5% 45% 27.5%;
       grid-template-rows: repeat(4, min-content);
