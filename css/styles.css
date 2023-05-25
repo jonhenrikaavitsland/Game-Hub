@@ -186,7 +186,7 @@ body,
 
 input,
 textarea {
-  caret-color: #1aff00;
+  caret-color: #1d2540;
 }
 
 
@@ -221,7 +221,8 @@ textarea {
 /* Logo */
 .gh-logo,
 .gh-logo-switch {
-  max-width: 15rem;
+  max-width: 80%;
+  max-height: auto;
 }
 
 .gh-logo-switch:active {
@@ -238,11 +239,11 @@ textarea {
 .social-gt,
 .icon {
   max-width: 3rem;
-  margin: 0.5rem;
+  max-height: auto;
 }
 
 .social-tw:active {
-  content: url(../images/svg/twitter-circle-green.svg);;
+  content: url(../images/svg/twitter-circle-green.svg);
 }
 
 .social-li:active {
@@ -457,6 +458,7 @@ select {
   height: 2rem;
   width: 2rem;
 }
+
 
 
 /*
