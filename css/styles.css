@@ -17,6 +17,7 @@ Table of contents
 6. Buttons
 7. Footer
 8. Forms
+9. Grid
 
 */
 
@@ -129,7 +130,7 @@ body,
 .cta-contact,
 .cta-explore,
 .btn-link,
-section {
+main {
   background-color: #1d2540;
 }
 
@@ -161,10 +162,6 @@ body,
 .add-bright-green,
 .btn-link {
   color: #1aff00;
-}
-
-.discount {
-  color: #f3a8a8;
 }
 
 ::placeholder,
@@ -230,7 +227,7 @@ textarea {
 }
 
 .social-tw:active {
-  content: url(../images/svg/twitter-circle-green.svg);
+  content: url(../images/svg/twitter-circle-green.svg);;
 }
 
 .social-li:active {
@@ -421,8 +418,9 @@ nav li,
 
 .tbl-1 {
   height: 3rem;
-  width: 94.67%;
+  width: 94%;
   border-radius: 0.3125rem;
+  margin: 1rem;
 }
 
 textarea {
@@ -446,4 +444,108 @@ select {
 .btn {
   height: 2rem;
   width: 2rem;
+}
+
+
+/*
+====
+Grid
+====
+*/
+
+
+/* Header section */
+.top-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr min-content;
+}
+
+.top-child-1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  justify-self: start;
+  align-self: start;
+}
+
+.top-child-2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  justify-self: end;
+  align-self: start;
+}
+
+.top-child-3 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  justify-self: stretch;
+  align-self: stretch;
+}
+
+
+/* Index Main section */
+.middle-container {
+  display: grid;
+  grid-template-columns: 27.2% 45.6% 27.2%;
+  grid-template-rows: min-content min-content 1fr min-content;
+}
+
+.middle-child-1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.middle-child-2 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.middle-child-3 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.middle-child-4 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+
+/* Footer Section */
+
+.bottom-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: min-content min-content;
+}
+
+.bottom-child-1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  justify-self: center;
+  align-self: center;
+}
+
+.bottom-child-2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  justify-self: center;
 }
