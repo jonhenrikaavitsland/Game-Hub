@@ -356,6 +356,7 @@ nav li,
   border-width: 0.125em;
   border-radius: 0.3125em;
   padding: 0.625em 1.25em;
+  margin-bottom: 6rem;
 }
 
 /* Game page and assassin page */
@@ -518,7 +519,6 @@ Grid
   display: grid;
   grid-template-columns: 27.2% 45.6% 27.2%;
   grid-template-rows: repeat(6, min-content);
-  row-gap: 6rem;
 }
 
 
@@ -590,8 +590,64 @@ Grid
   grid-column-end: 4;
   grid-row-start: 4;
   grid-row-end: 5;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, min-content);
+  gap: 0.5rem;
+  justify-items: center;
 }
 
+/* Grid for Trending now section */
+.middle-child-4-1 {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.middle-child-4-2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    align-self: center;
+}
+
+.middle-child-4-3 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.middle-child-4-4 {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    align-self: center;
+}
+
+.middle-child-4-5 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.middle-child-4-6 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.middle-child-4-7 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
 
 /* Footer Section */
 
