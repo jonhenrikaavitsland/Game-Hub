@@ -262,15 +262,9 @@ input {
   .hdr-43,
   .hdr-44 {
     border-style: solid;
-    border-width: 0,5em;
+    border-width: 0.25em;
     border-color: var(--dark-blue);
     text-align: center;
-  }
-
-  .hdr-41,
-  .hdr-42,
-  .hdr-43 {
-    border-right: var(--dark-blue);
   }
 }
 
@@ -399,6 +393,7 @@ footer {
       display: grid;
       grid-template-columns: repeat(8, 12.5%);
       grid-template-rows: min-content;
+
   }
 
   .hdr-5 {
