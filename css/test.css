@@ -370,8 +370,8 @@ footer {
 /* This is the grid directly beneath Header! */
 
 .hdr-1 {
-    grid-column-start: 2;
-    grid-column-end: 7;
+    grid-column-start: 4;
+    grid-column-end: 9;
     grid-row-start: 1;
     grid-row-end: 3;
 }
