@@ -1,0 +1,372 @@
+
+/*
+=================
+Table of contents
+=================
+
+1. Variables
+2. Global Styles
+3. Hamburger menu
+4. Classes
+  4.1. Single use classes
+5. Images
+6. Typography
+7. colors
+8. Buttons
+9. Grid
+*/
+
+/*
+================
+1. Variables
+================
+*/
+
+:root {
+  --dark-blue: #1d2540;
+  --dark-green: #01403a;
+  --white-f2: #f2f2f2;
+  --black: #0d0d0d;
+  --fancy-green: #1aff00;
+  --red: #f3a8a8;
+  --light-blue: #2d3e77;
+
+}
+
+/*
+================
+2. Global Styles
+================
+*/
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav a {
+  text-transform: uppercase;
+}
+
+
+/*
+=================
+3. Hamburger menu
+=================
+*/
+
+nav,
+#menu-checkbox {
+  display: none;
+}
+
+#menu-checkbox:checked ~ nav {
+  display: block;
+}
+
+header {
+  position: relative;
+}
+
+nav {
+  position: absolute;
+  background-color: #2d3e77;
+  left: 0%;
+  top: 25%;
+}
+
+nav a {
+  display: block;
+  padding: 1rem 2rem;
+}
+
+.hamburger-icon {
+  color: var(--fancy-green);
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.hamburger-icon:active {
+  color: var(--white-f2);
+}
+
+@media (min-width: 600px) {
+  nav {
+    display: block;
+    position: static;
+    background-color: var(--dark-green);
+  }
+  
+  .hamburger-icon {
+    display: none;
+  }
+
+  nav a {
+    display: inline-block;
+  }
+
+  .crt-1,
+  .act-1 {
+    display: none;
+  }
+}
+
+
+/*
+==========
+4. Classes
+==========
+*/
+
+/*
+-----------------------
+4.1. Single use classes
+-----------------------
+*/
+
+.hdr-5,
+.hdr-6 {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .hdr-5,
+  .hdr-6 {
+    display: block;
+    max-width: 50%;
+    margin-top: 1rem;
+  }
+}
+
+
+/*
+=========
+5. Images
+=========
+*/
+
+.gh-logo-switch:active {
+  content: url(../images/logo-checked.png);
+}
+
+.hdr-5:active {
+  content: url(../images/svg/cart-green.svg);
+}
+
+.hdr-6:active {
+  content: url(../images/svg/account-login-green.svg);
+}
+
+/*
+=============
+6. Typography
+=============
+*/
+
+Body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.75em;
+  line-height: 2.625em;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.3125em;
+  line-height: 1.96875em;
+}
+
+h3,
+.titles {
+  font-family: "Teko", sans-serif;
+  font-weight: 400;
+  font-size: 1.75em;
+  line-height: 2.625em;
+}
+
+.prices {
+  font-family: "Teko", sans-serif;
+  font-weight: 500;
+  font-size: 1.75em;
+  line-height: 2.625em;
+}
+
+
+/*
+=========
+7. Colors
+=========
+*/
+
+body {
+  background-color: var(--dark-green)
+}
+
+a {
+  color: var(--white-f2);
+}
+
+.add-fancy {
+  color: var(--fancy-green);
+}
+
+
+/*
+==========
+8. Buttons
+==========
+*/
+
+@media (min-width: 600px) {
+  .hdr-41,
+  .hdr-42,
+  .hdr-43,
+  .hdr-44 {
+    border-style: solid;
+    border-width: 0,5em;
+    border-color: var(--dark-blue);
+  }
+
+  .hdr-41,
+  .hdr-42,
+  .hdr-43 {
+    border-right: var(--dark-blue);
+  }
+}
+
+
+/*
+=======
+9. Grid
+=======
+*/
+
+/* This is the main grid containing header, body and footer! */
+
+.grid-container {
+  display: grid;
+  gap: 5%;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+header {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: grid;
+  grid-template-columns: repeat(12, 8.33%);
+  grid-template-rows: 1fr 1fr min-content;
+}
+
+main {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+footer {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+/* This is the grid directly beneath Header! */
+
+.hdr-1 {
+    grid-column-start: 3;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.hdr-2,
+.hdr-3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+@media (min-width: 600px) {
+  .hdr-4 {
+      grid-column-start: 1;
+      grid-column-end: 13;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      display: grid;
+      grid-template-columns: repeat(4, 25%);
+      grid-template-rows: min-content;
+      justify-items: stretch;
+      text-align: center;
+  }
+
+  .hdr-5 {
+      grid-column-start: 11;
+      grid-column-end: 12;
+      grid-row-start: 1;
+      grid-row-end: 2;
+  }
+
+.hdr-6 {
+      grid-column-start: 12;
+      grid-column-end: 13;
+      grid-row-start: 1;
+      grid-row-end: 2;
+  }
+
+  .hdr-1 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+}
+
+/* Grid Nav bar */
+
+.hdr-41 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 2;
+}
+
+.hdr-42 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+}
+
+.hdr-43 {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 2;
+}
+
+.hdr-44 {
+      grid-column-start: 4;
+      grid-column-end: 5;
+      grid-row-start: 1;
+      grid-row-end: 2;
+}
