@@ -89,7 +89,7 @@ nav {
   position: absolute;
   background-color: #2d3e77;
   left: 0%;
-  top: 25%;
+  top: 30%;
 }
 
 nav a {
@@ -347,7 +347,7 @@ header {
   grid-row-end: 2;
   display: grid;
   grid-template-columns: repeat(12, 8.33%);
-  grid-template-rows: 1fr 1fr min-content;
+  grid-template-rows: 1fr min-content min-content;
 }
 
 main {
@@ -373,7 +373,7 @@ footer {
     grid-column-start: 4;
     grid-column-end: 9;
     grid-row-start: 1;
-    grid-row-end: 3;
+    grid-row-end: 2;
 }
 
 .hdr-2,
