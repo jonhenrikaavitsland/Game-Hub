@@ -55,7 +55,7 @@ nav a {
   text-transform: uppercase;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .hdr-41,
   .hdr-42,
   .hdr-43,
@@ -233,7 +233,7 @@ a {
   color: var(--fancy-green);
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .hdr-41 {
     background-color: var(--dark-blue);
   }
@@ -244,6 +244,10 @@ a {
 
 main {
   background-color: var(--dark-blue);
+}
+
+input {
+  caret-color: var(--dark-blue);
 }
 
 /*
@@ -260,6 +264,7 @@ main {
     border-style: solid;
     border-width: 0,5em;
     border-color: var(--dark-blue);
+    text-align: center;
   }
 
   .hdr-41,
@@ -269,6 +274,14 @@ main {
   }
 }
 
+@media (min-width: 1200px) {
+  .hdr-41,
+  .hdr-42,
+  .hdr-43,
+  .hdr-44 {
+    text-align: center;
+  }
+}
 
 /*
 ========
@@ -290,7 +303,7 @@ main {
   display: none;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .mainc-1 {
     display: none;
   }
@@ -386,9 +399,6 @@ footer {
       display: grid;
       grid-template-columns: repeat(8, 12.5%);
       grid-template-rows: min-content;
-      justify-items: stretch;
-      text-align: center;
-      align-items: end;
   }
 
   .hdr-5 {
@@ -461,7 +471,7 @@ footer {
       grid-row-end: 2;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .hdr-41 {
     grid-column-start: 1;
     grid-column-end: 2;
