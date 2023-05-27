@@ -3,3 +3,5 @@ Things that need to be taken care of only when the design is finished
 
 1. Different color options and design options for the popup via hamburger bar checkbox hack.
 2. We need to fix so that the active state of socials isn't displaying the wrong size at different screens if possible.
+3. Consider wether or not to use uppercase for cta in hero image.
+4. When you have time, look at possibilities for swapping sections for flex.
