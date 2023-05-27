@@ -167,15 +167,6 @@ nav a {
   display: none;
 }
 
-/* social bar in footer */
-.ft-1 {
-  display: inline-flex;
-  gap: 0.5rem;
-  justify-self: center;
-  align-self: center;
-  font-size: 50%;
-}
-
 @media (min-width: 600px) {
   .mainc-2 {
     display: block
@@ -228,6 +219,19 @@ nav a {
   content: url(../Images/svg/github-circular-green.svg);
 }
 
+/* social bar in footer */
+.icon,
+.ft-1 {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.icon {
+  min-width: none;
+  max-width: 100%;
+}
 
 /*
 =============
@@ -559,8 +563,8 @@ footer {
 /* Footer section grid */
 
 .ft-1 {
-    grid-column-start: 1;
-    grid-column-end: 8;
+    grid-column-start: 2;
+    grid-column-end: 7;
     grid-row-start: 1;
     grid-row-end: 2;
 }
