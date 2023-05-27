@@ -2,5 +2,4 @@ Things that need to be taken care of only when the design is finished
 
 
 1. Different color options and design options for the popup via hamburger bar checkbox hack.
-2. Ask MJ about wrapping the page to a max size of 1500 px or something like that and how to make it show just as much white-space on both sides of the page. 
-3. Consider changing the icons on top for text links, it might look smoother.
+2. We need to fix so that the active state of socials isn't displaying the wrong size at different screens if possible.
