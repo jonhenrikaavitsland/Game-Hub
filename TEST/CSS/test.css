@@ -13,7 +13,8 @@ Table of contents
 6. Typography
 7. colors
 8. Buttons
-9. Grid
+9. Forms
+10. Grid
 */
 
 /*
@@ -43,10 +44,6 @@ body {
   margin: 0;
 }
 
-img {
-  max-width: 100%;
-}
-
 a {
   text-decoration: none;
 }
@@ -55,16 +52,13 @@ nav a {
   text-transform: uppercase;
 }
 
-/* Menubar */
-@media (min-width: 1200px) {
-  .hdr-41,
-  .hdr-42,
-  .hdr-43,
-  .hdr-44 {
-    border-style: solid;
-    border-width: 0.5em;
-    border-radius: 25px 25px 0px 0px;
-  }
+footer li {
+  list-style-type: none;
+  margin-left: 0.5rem
+}
+
+footer ul {
+  padding: 0;
 }
 
 
@@ -156,13 +150,13 @@ nav a {
 }
 
 
-
 /*
 ----------------------
 4.2. Multi-use classes
 ----------------------
 */
 
+.ft-6,
 .hdr-5 {
   white-space: nowrap;
 }
@@ -171,6 +165,15 @@ nav a {
 .hdr-8,
 .hdr-7 {
   display: none;
+}
+
+/* social bar in footer */
+.ft-1 {
+  display: inline-flex;
+  gap: 0.5rem;
+  justify-self: center;
+  align-self: center;
+  font-size: 50%;
 }
 
 @media (min-width: 600px) {
@@ -197,8 +200,32 @@ nav a {
 =========
 */
 
-.gh-logo-switch:active {
+.gh-logo{
+  max-width: 100%;
+}
+
+.gh-logo:active {
   content: url(../images/logo-checked.png);
+}
+
+.social-tw:active {
+  content: url(../Images/svg/twitter-circle-green.svg);
+}
+
+.social-li:active {
+  content: url(../Images/svg/linkedin-circle-green.svg);
+}
+
+.social-fb:active {
+  content: url(../Images/svg/facebook-circle-green.svg);
+}
+
+.social-yt:active {
+  content: url(../Images/svg/youtube-circle-green.svg);
+}
+
+.social-gt:active {
+  content: url(../Images/svg/github-circular-green.svg);
 }
 
 
@@ -278,6 +305,7 @@ body {
   color: var(--white-f2);
 }
 
+footer ul a:active,
 .add-fancy,
 .active:active,
 #hdr-41:active,
@@ -298,6 +326,7 @@ input {
 ==========
 */
 
+/* Menubar */
 @media (min-width: 600px) {
   .hdr-41,
   .hdr-42,
@@ -307,6 +336,17 @@ input {
     border-width: 0.25em;
     border-color: var(--dark-blue);
     text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hdr-41,
+  .hdr-42,
+  .hdr-43,
+  .hdr-44 {
+    border-style: solid;
+    border-width: 0.5em;
+    border-radius: 25px 25px 0px 0px;
   }
 }
 
@@ -342,6 +382,10 @@ input {
   border-style: solid;
   border-width: 0.2rem;
   border-color: var(--fancy-green);
+}
+
+.mainc-2 {
+  margin-top: 1rem;
 }
 
 /*
@@ -383,6 +427,10 @@ footer {
   grid-column-end: 13;
   grid-row-start: 3;
   grid-row-end: 4;
+  display: grid;
+  grid-template-columns: repeat(7, 20% 10% 10% 10% 10% 10% 20%);
+  grid-template-rows: min-content min-content;
+  gap: 1.66%;
 }
 
 /* This is the grid directly beneath Header! */
@@ -431,21 +479,21 @@ footer {
 
 
 .hdr-7 {
-  grid-column-start: 8;
-  grid-column-end: 11;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  align-self: center;
-  text-align: center;
+    grid-column-start: 8;
+    grid-column-end: 11;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    align-self: center;
+    text-align: center;
 }
 
 .hdr-8 {
-  grid-column-start: 11;
-  grid-column-end: 12;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  align-self: center;
-  justify-self: center;
+    grid-column-start: 11;
+    grid-column-end: 12;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    align-self: center;
+    justify-self: center;
 }
 
 /* Grid Nav bar */
@@ -508,28 +556,45 @@ footer {
   }
 }
 
+/* Footer section grid */
+
+.ft-1 {
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.ft-6 {
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: center;
+    text-align: center;
+}
+
 /* Index page main section */
 
 .mainc-1 {
-  grid-column-start: 2;
-  grid-column-end: 12;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  text-align: center;
-  align-self: center;
+    grid-column-start: 2;
+    grid-column-end: 12;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+    align-self: center;
 }
 
 @media (min-width: 600px) {
-  .mainc-1 {
-    grid-column-end: 11;
-  }
+    .mainc-1 {
+      grid-column-end: 11;
+    }
 }
 
 .mainc-2 {
-  grid-column-start: 11;
-  grid-column-end: 12;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  justify-self: start;
-  align-self: center;
+    grid-column-start: 11;
+    grid-column-end: 12;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: start;
 }
