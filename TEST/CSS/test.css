@@ -239,7 +239,7 @@ nav a {
 @media (min-width: 600px) {
   .mainc-3 {
     background-image: url(../Images/hero-image-tablet.jpg);
-    min-height: 700h;
+    min-height: 70vh;
     background-position-x: center;
   }
 }
@@ -707,6 +707,8 @@ footer {
         grid-column-end: 11;
         grid-row-start: 1;
         grid-row-end: 2;
+        justify-self: end;
+        align-self: end;
 }
 
 .mainc-32 {
@@ -725,6 +727,7 @@ footer {
           grid-row-start: 3;
           grid-row-end: 4;
           justify-self: end;
+          align-self: end;
   }
 }
 
