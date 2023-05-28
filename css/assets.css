@@ -1,0 +1,655 @@
+/*
+=================
+Table of contents
+=================
+
+1. Custom Variables
+2. Global Styles
+3. Hamburger Menu
+4. Typography
+5. Buttons
+6. Colors
+7. Forms
+8. Header
+9. Footer
+10. Index page
+11. Games page
+12. About page
+13. Contact page
+14. Assassin page
+15. Checkout page
+16. Success page
+17. Grid
+18. Media Queries
+*/
+
+
+/*
+===================
+1. Custom Variables
+===================
+*/
+
+:root {
+  --dark-blue: #1d2540;
+  --dark-green: #01403a;
+  --white-f2: #f2f2f2;
+  --black: #0d0d0d;
+  --fancy-green: #1aff00;
+  --red: #f3a8a8;
+  --light-blue: #2d3e77;
+}
+
+
+/*
+================
+2. Global Styles
+================
+*/
+
+body {
+  background-color: var(--dark-green);
+  max-width: 2000px;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+body {
+  color: var(--white-f2);
+}
+
+main {
+  background-color: var(--dark-blue);
+}
+
+/*
+=================
+3. Hamburger menu
+=================
+*/
+
+nav,
+#menu-checkbox {
+  display: none;
+}
+
+#menu-checkbox:checked ~ nav {
+  display: block;
+}
+
+header {
+  position: relative;
+}
+
+nav {
+  position: absolute;
+  background-color: #2d3e77;
+  left: 0%;
+  top: 50%;
+}
+
+nav a {
+  display: block;
+  padding: 1rem 2rem;
+}
+
+.hamburger-icon {
+  color: var(--fancy-green);
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.hamburger-icon:active {
+  color: var(--white-f2);
+}
+
+
+/*
+=============
+4. Typography
+=============
+*/
+
+input,
+Body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.give-h1,
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.75em;
+  line-height: 2.625em;
+}
+
+.cta-explore,
+button,
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.3125em;
+  line-height: 1.96875em;
+}
+
+h3,
+.titles {
+  font-family: "Teko", sans-serif;
+  font-weight: 400;
+  font-size: 1.75em;
+  line-height: 2.625em;
+}
+
+.prices {
+  font-family: "Teko", sans-serif;
+  font-weight: 500;
+  font-size: 1.75em;
+  line-height: 2.625em;
+}
+
+
+/*
+==========
+5. Buttons
+==========
+*/
+
+
+/*
+=========
+6. Colors
+=========
+*/
+
+.add-fancy,
+.active:active{
+  color: var(--fancy-green);
+}
+
+/*
+========
+7. Forms
+========
+*/
+
+/* Search-bar */
+.form-1 {
+  height: 3rem;
+  width: 90%;
+  border-radius: 0.5rem;
+  margin: 1rem 0rem;
+}
+
+.form-2 {
+  height: 3rem;
+  width: 95%;
+  border-radius: 0.5rem;
+}
+
+/* Search buttons */
+.mainc-2,
+.hdr-8 {
+  height: 3rem;
+  width: 4rem;
+  border-radius: 0.5rem;
+  background-color: var(--white-f2);
+  text-transform: uppercase;
+  color: var(--dark-blue);
+  border-style: solid;
+  border-width: 0.2rem;
+  border-color: var(--fancy-green);
+}
+
+.mainc-2 {
+  margin-top: 1rem;
+}
+
+input {
+  caret-color: var(--dark-blue);
+  color: var(--dark-blue);
+}
+
+/*
+=========
+8. Header
+=========
+*/
+
+nav a {
+  text-transform: uppercase;
+}
+
+.hdr-8,
+.hdr-7,
+.hdr-5 {
+  display: none;
+}
+
+.hdr-5 {
+  white-space: nowrap;
+}
+
+#hdr-41:active,
+#hdr-42:active,
+#hdr-43:active,
+#hdr-44:active {
+  color: var(--fancy-green);
+}
+
+.gh-logo{
+  max-width: 100%;
+}
+
+.gh-logo:active {
+  content: url(../images/logo-checked.png);
+}
+
+/*
+=========
+9. Footer
+=========
+*/
+
+footer li {
+  list-style-type: none;
+  margin-left: 0.5rem
+}
+
+footer ul {
+  padding: 0;
+}
+
+.ft-6 {
+  white-space: nowrap;
+}
+
+.social-tw:active {
+  content: url(../Images/svg/twitter-circle-green.svg);
+}
+
+.social-li:active {
+  content: url(../Images/svg/linkedin-circle-green.svg);
+}
+
+.social-fb:active {
+  content: url(../Images/svg/facebook-circle-green.svg);
+}
+
+.social-yt:active {
+  content: url(../Images/svg/youtube-circle-green.svg);
+}
+
+.social-gt:active {
+  content: url(../Images/svg/github-circular-green.svg);
+}
+
+/* social bar in footer */
+.icon,
+.ft-1 {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.icon {
+  min-width: none;
+  max-width: 100%;
+}
+
+
+footer ul a:active {
+  color: var(--fancy-green);
+}
+
+
+/*
+=============
+10. Index page
+=============
+*/
+
+
+/*
+==============
+11. Games page
+==============
+*/
+
+
+/*
+==============
+12. About page
+==============
+*/
+
+
+/*
+================
+13. Contact page
+================
+*/
+
+
+/*
+=================
+14. Assassin page
+=================
+*/
+
+
+/*
+=================
+15. Checkout page
+=================
+*/
+
+
+/*
+================
+16. Success page
+================
+*/
+
+/*
+========
+17. Grid
+========
+*/
+
+body {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, min-content);
+}
+
+header {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: grid;
+  grid-template-columns: repeat(12, 8.33%);
+  grid-template-rows: min-content min-content min-content;
+}
+
+main {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: grid;
+  grid-template-columns: repeat(12, 8.33%);
+  grid-template-rows: max-content;
+}
+
+footer {
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  display: grid;
+  grid-template-columns: repeat(7, 20% 10% 10% 10% 10% 10% 20%);
+  grid-template-rows: min-content;
+  gap: 1.66%;
+}
+
+/* This is the grid directly beneath Header! */
+
+.hdr-1 {
+  grid-column-start: 4;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.hdr-2,
+.hdr-3 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.hdr-7 {
+  grid-column-start: 8;
+  grid-column-end: 11;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  align-self: center;
+  text-align: center;
+}
+
+.hdr-8 {
+  grid-column-start: 11;
+  grid-column-end: 12;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  align-self: center;
+  justify-self: center;
+}
+
+/* Grid Nav bar */
+
+.hdr-41 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.hdr-42 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.hdr-43 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.hdr-44 {
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+/* Footer section grid */
+
+.ft-1 {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.ft-6 {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  justify-self: center;
+  text-align: center;
+}
+
+
+/*
+=================
+18. Media Queries
+=================
+*/
+
+@media (max-width: 480px) {
+  
+}
+
+@media (min-width: 481px) and (max-width: 1299px) {
+  .hdr-41,
+  .hdr-42,
+  .hdr-43,
+  .hdr-44 {
+    border-style: solid;
+    border-width: 0.25em;
+    border-color: var(--dark-blue);
+    text-align: center;
+  }
+}
+
+@media (min-width: 1300px) {
+  /* Displays search bar and button in header */
+  .hdr-8,
+  .hdr-7 {
+    display: block;
+  }
+
+  /* Sets the background color of the active menu-bar */
+  .bg-blue {
+    background-color: var(--dark-blue);
+  }
+
+  /* Overrides the fancy green state */
+  #hdr-44,
+  #hdr-43,
+  #hdr-42,
+  #hdr-41 {
+    color: var(--white-f2);
+    text-align: center;
+  }
+
+  /* Sets the border design of the nav bar */
+  .hdr-41,
+  .hdr-42,
+  .hdr-43,
+  .hdr-44 {
+    border-style: solid;
+    border-width: 0.5em;
+    border-radius: 25px 25px 0px 0px;
+    border-color: var(--dark-blue);
+  }
+
+  header {
+    grid-column-start: 2;
+    grid-column-end: 12;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: grid;
+    grid-template-columns: repeat(12, 8.33%);
+    grid-template-rows: 1fr min-content min-content;
+}
+
+main {
+    grid-column-start: 2;
+    grid-column-end: 12;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-columns: repeat(12, 8.33%);
+    grid-template-rows: repeat(5, min-content);
+}
+
+footer {
+    grid-column-start: 2;
+    grid-column-end: 12;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: grid;
+    grid-template-columns: repeat(7, 20% 10% 10% 10% 10% 10% 20%);
+    grid-template-rows: min-content min-content;
+    gap: 1.66%;
+}
+
+  /* Nav bar */
+  .hdr-41 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+.hdr-42 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+.hdr-43 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+.hdr-44 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+
+/* This is for queries that applies to both tablet and desktop screen sizes! */
+@media (min-width: 481px) {
+
+  /* Hamburger bar */
+  nav {
+    display: block;
+    position: static;
+    background-color: var(--dark-green);
+  }
+  
+  .hamburger-icon {
+    display: none;
+  }
+  
+  /* Hides menu options from the Menubar */
+  .crt-1,
+  .act-1 {
+    display: none;
+  }
+
+  /* Positions the links in the top right corner */
+  .hdr-5 {
+    margin-top: 1rem;
+    display: inline-flex;
+    gap: 1rem;
+    justify-self: end;
+  }
+
+  /* Grid Header section */
+  .hdr-4 {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: grid;
+    grid-template-columns: repeat(8, 12.5%);
+    grid-template-rows: min-content;
+  }
+
+.hdr-5 {
+    grid-column-start: 5;
+    grid-column-end: 12;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+.hdr-1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+}
