@@ -49,8 +49,7 @@ Table of contents
 
 body {
   background-color: var(--dark-green);
-  max-width: 2000px;
-  margin: 0;
+  margin: 0
 }
 
 a {
@@ -386,7 +385,7 @@ footer ul a:active {
 ========
 */
 
-body {
+.grid-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(3, min-content);
