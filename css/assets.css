@@ -81,6 +81,10 @@ h4 {
   margin-bottom: 6rem;
 }
 
+.hdr-5
+.ft-6 {
+  white-space: nowrap;
+}
 
 
 /*
@@ -268,10 +272,6 @@ nav a {
   display: none;
 }
 
-.hdr-5 {
-  white-space: nowrap;
-}
-
 #hdr-41:active,
 #hdr-42:active,
 #hdr-43:active,
@@ -304,10 +304,6 @@ footer li {
 
 footer ul {
   padding: 0;
-}
-
-.ft-6 {
-  white-space: nowrap;
 }
 
 .social-tw:active {
@@ -468,7 +464,6 @@ footer {
   display: grid;
   grid-template-columns: 25% 10% 10% 10% 10% 10% 25%;
   grid-template-rows: min-content;
-
 }
 
 /* This is the grid directly beneath Header! */
