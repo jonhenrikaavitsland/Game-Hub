@@ -280,7 +280,7 @@ nav a {
 }
 
 .gh-logo{
-  max-width: 100%;
+  max-height: 100px;
 }
 
 .gh-logo:active {
@@ -803,6 +803,10 @@ footer {
 /* //////// MIN 481 PX - MAX 1299 PX \\\\\\\\ */
 @media (min-width: 481px) and (max-width: 1299px) {
 
+  .gh-logo{
+    max-height: 150px;
+  }
+
   /* This is when the mobile or tablet is rotated */
 @media (orientation: landscape) {
   .mainc-3 {
@@ -949,6 +953,10 @@ section .mainc-4714 {
 /* //////// MIN 1300 PX \\\\\\\\ */
 @media (min-width: 1300px) {
   /* This is when the mobile or tablet is rotated */
+
+  .gh-logo{
+    max-height: 375px;
+  }
 
   @media (orientation: landscape) {
   .mainc-3 {
