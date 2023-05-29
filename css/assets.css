@@ -81,7 +81,7 @@ h4 {
   margin-bottom: 6rem;
 }
 
-.hdr-5
+.hdr-5,
 .ft-6 {
   white-space: nowrap;
 }
@@ -1284,10 +1284,14 @@ section .mainc-4714 {
 
   /* Positions the links in the top right corner */
   .hdr-5 {
-    margin-top: 1rem;
+    margin: 1rem 1rem 0rem 0rem;
     display: inline-flex;
     gap: 1rem;
     justify-self: end;
+    grid-column-start: 6;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 2;
   }
 
   /* Grid Header section */
@@ -1299,13 +1303,6 @@ section .mainc-4714 {
     display: grid;
     grid-template-columns: repeat(8, 12.5%);
     grid-template-rows: min-content;
-  }
-
-.hdr-5 {
-    grid-column-start: 5;
-    grid-column-end: 12;
-    grid-row-start: 1;
-    grid-row-end: 2;
   }
 
 .hdr-1 {
