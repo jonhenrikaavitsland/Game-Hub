@@ -955,7 +955,7 @@ section .mainc-4714 {
   /* This is when the mobile or tablet is rotated */
 
 header {
-  grid-template-rows: 40vh min-content min-content;
+  grid-template-rows: 100% min-content min-content;
 }
 
   @media (orientation: landscape) {
@@ -1292,7 +1292,7 @@ section .mainc-4714 {
   }
 }
 
-@media (max-width: 915px) and (orientation: landscape) {
+@media (max-width: 915px) and (max-width: 1299px) and (orientation: landscape) {
   header {
     grid-template-rows: 34vh min-content min-content;
   }
