@@ -688,6 +688,13 @@ footer {
 
 
 @media (min-width: 481px) and (max-width: 1299px) {
+  /* This is when the mobile or tablet is rotated */
+  @media (orientation: landscape) {
+    .mainc-3 {
+      grid-template-rows: repeat(10, 80px)
+    }
+  }
+  
   /* Adjusts to two rows of content for index */
   .mainc-4 {
     grid-template-columns: 15% 27.5% 15% 27.5% 15%;
@@ -761,16 +768,18 @@ footer {
     grid-row-end: 5;
   }
 
-  /* This is when the mobile or tablet is rotated */
-  @media (orientation: landscape) {
-    .mainc-3 {
-      grid-template-rows: repeat(10, 80px)
-    }
-  }
+
 }
 
 
 @media (min-width: 1300px) {
+  /* This is when the mobile or tablet is rotated */
+  @media (orientation: landscape) {
+    .mainc-3 {
+      grid-template-rows: repeat(10, 100px)
+    }
+  }
+
   /* Makes the content show 4 products in one line */
   .mainc-4 {
     grid-template-columns: repeat(4, 8% 15%) 8%;
