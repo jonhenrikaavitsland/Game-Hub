@@ -742,7 +742,7 @@ footer {
 
 .mainc-4713 {
   grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
 }
@@ -1199,6 +1199,13 @@ footer {
   grid-template-rows: repeat(5, min-content);
   justify-items: center;
   align-items: center;
+}
+
+.mainc-4713 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
 .mainc-4751,
