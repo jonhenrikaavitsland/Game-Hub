@@ -258,6 +258,10 @@ main button {
 =========
 */
 
+header {
+  min-height: 13vh;
+}
+
 nav a {
   text-transform: uppercase;
 }
