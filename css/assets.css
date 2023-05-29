@@ -741,8 +741,8 @@ footer {
 }
 
 .mainc-4713 {
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
 }
@@ -798,12 +798,6 @@ footer {
 /* //////// MIN 481 PX - MAX 1299 PX \\\\\\\\ */
 @media (min-width: 481px) and (max-width: 1299px) {
 
-  /* This is when the mobile or tablet is rotated */
-@media (orientation: landscape) {
-  .mainc-3 {
-    grid-template-rows: repeat(10, 80px)
-  }
-}
 
   /* Sets the border design of the nav bar */
 .hdr-41,
@@ -899,6 +893,18 @@ footer {
   align-self: center;
 }
 
+.mainc-473 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  grid-template-rows: repeat(5, min-content);
+  justify-items: center;
+  align-items: center;
+}
+
 section .mainc-4714 {
   display: none;
 }
@@ -937,6 +943,13 @@ section .mainc-4714 {
   grid-row-start: 4;
   grid-row-end: 5;
 }
+
+  /* This is when the mobile or tablet is rotated */
+  @media (orientation: landscape) {
+    .mainc-3 {
+      grid-template-rows: repeat(10, 80px)
+    }
+  }
 
 }
 
@@ -1134,45 +1147,55 @@ footer {
     grid-row-start: 4;
     grid-row-end: 5;
     display: grid;
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(4, 8% 15%) 8%;
     grid-template-rows: repeat(2, min-content);
   }
 
-section .mainc-4732,
-section .mainc-4712,
-section .mainc-4714 {
-  display: none;
-}
-
 .mainc-472 {
   grid-column-start: 1;
-  grid-column-end: 5;
+  grid-column-end: 10;
 }
 
 .mainc-471 {
-  grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-template-columns: 100%;
 }
 
+.mainc-473 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5, min-content);
+    justify-items: center;
+    align-items: center;
+  }
+
+
 .mainc-474 {
-  grid-column-start: 3;
-  grid-column-end: 4;
+  grid-column-start: 6;
+  grid-column-end: 7;
   grid-row-start: 2;
   grid-row-end: 3;
   display: grid;
-  grid-template-columns: 30% 40% 30%;
+  grid-template-columns: 100%;
   grid-template-rows: repeat(5, min-content);
   justify-items: center;
   align-items: center;
 }
 
 .mainc-475 {
-  grid-column-start: 4;
-  grid-column-end: 5;
+  grid-column-start: 8;
+  grid-column-end: 9;
   grid-row-start: 2;
   grid-row-end: 3;
   display: grid;
-  grid-template-columns: 30% 40% 30%;
+  grid-template-columns: 100%;
   grid-template-rows: repeat(5, min-content);
   justify-items: center;
   align-items: center;
@@ -1181,8 +1204,8 @@ section .mainc-4714 {
 .mainc-4751,
 .mainc-4741,
 .mainc-4731 {
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
 }
@@ -1191,7 +1214,7 @@ section .mainc-4714 {
 .mainc-4742,
 .mainc-4733 {
   grid-column-start: 1;
-  grid-column-end: 4;
+  grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
 }
@@ -1200,7 +1223,7 @@ section .mainc-4714 {
 .mainc-4743,
 .mainc-4734 {
   grid-column-start: 1;
-  grid-column-end: 4;
+  grid-column-end: 2;
   grid-row-start: 3;
   grid-row-end: 4;
 }
@@ -1209,12 +1232,18 @@ section .mainc-4714 {
 .mainc-4744,
 .mainc-4735 {
   grid-column-start: 1;
-  grid-column-end: 4;
+  grid-column-end: 2;
   grid-row-start: 4;
   grid-row-end: 5;
 }
+
+section .mainc-4732,
+section .mainc-4712,
+section .mainc-4714 {
+  display: none;
 }
 
+}
 
 /* //////// MIN 481 PX \\\\\\\\ */
 /* This is for queries that applies to both tablet and desktop screen sizes! */
@@ -1279,15 +1308,4 @@ section .mainc-4714 {
     grid-row-end: 3;
   }
 
-  .mainc-473 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    display: grid;
-    grid-template-columns: 30% 40% 30%;
-    grid-template-rows: repeat(5, min-content);
-    justify-items: center;
-    align-items: center;
-  }
 }
