@@ -447,7 +447,7 @@ header {
   grid-row-end: 2;
   display: grid;
   grid-template-columns: repeat(12, 8.33%);
-  grid-template-rows: 6rem min-content min-content;
+  grid-template-rows: min-content min-content min-content;
 }
 
 main {
@@ -803,10 +803,6 @@ footer {
 /* //////// MIN 481 PX - MAX 1299 PX \\\\\\\\ */
 @media (min-width: 481px) and (max-width: 1299px) {
 
-header {
-  grid-template-rows: 14vh min-content min-content;
-}
-
   /* This is when the mobile or tablet is rotated */
 @media (orientation: landscape) {
   .mainc-3 {
@@ -953,10 +949,6 @@ section .mainc-4714 {
 /* //////// MIN 1300 PX \\\\\\\\ */
 @media (min-width: 1300px) {
   /* This is when the mobile or tablet is rotated */
-
-header {
-  grid-template-rows: 100% min-content min-content;
-}
 
   @media (orientation: landscape) {
   .mainc-3 {
@@ -1289,11 +1281,5 @@ section .mainc-4714 {
     grid-template-rows: repeat(5, min-content);
     justify-items: center;
     align-items: center;
-  }
-}
-
-@media (max-width: 915px) and (max-width: 1299px) and (orientation: landscape) {
-  header {
-    grid-template-rows: 34vh min-content min-content;
   }
 }
