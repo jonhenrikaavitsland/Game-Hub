@@ -1031,9 +1031,22 @@ footer {
     grid-row-start: 3;
     grid-row-end: 4;
     display: grid;
-    grid-template-columns: repeat(7, 20% 10% 10% 10% 10% 10% 20%);
+    grid-template-columns: 25% 10% 10% 10% 10% 10% 25%;
     grid-template-rows: min-content min-content;
-    gap: 1.66%;
+}
+
+.hdr-7 {
+  grid-column-start: 8;
+  grid-column-end: 12;
+  align-self: start;
+  text-align: center;
+}
+
+.hdr-8 {
+  grid-column-start: 12;
+  grid-column-end: 13;
+  align-self: start;
+  justify-self: start;
 }
 
   /* Nav bar */
