@@ -73,6 +73,16 @@ h4 {
   margin: 0;
 }
 
+.give-margin6 {
+  margin: 3rem 0rem;
+}
+
+.give-margin6-btm {
+  margin-bottom: 6rem;
+}
+
+
+
 /*
 =================
 3. Hamburger menu
@@ -283,6 +293,10 @@ nav a {
 =========
 */
 
+.ft-1 {
+  margin-top: 1rem;
+}
+
 footer li {
   list-style-type: none;
   margin-left: 0.5rem
@@ -367,7 +381,6 @@ aside {
 
 .new-release {
   max-width: 100%;
-  margin-top: 6rem;
 }
 
 .trending {
@@ -889,7 +902,7 @@ footer {
   align-self: center;
 }
 
-.mainc-4714 {
+section .mainc-4714 {
   display: none;
 }
 
