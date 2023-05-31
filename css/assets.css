@@ -50,7 +50,8 @@ Table of contents
 
 body {
   background-color: var(--dark-green);
-  margin: 0
+  max-width: 1700px;
+  margin: 0 auto;
 }
 
 a {
@@ -145,7 +146,6 @@ Body {
 
 .give-h1,
 h1 {
-  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 1.75em;
   line-height: 2.625em;
@@ -155,8 +155,6 @@ h1 {
 .cta-explore,
 button,
 h2 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
   font-size: 1.3125em;
   line-height: 1.96875em;
 }
@@ -171,7 +169,6 @@ h3,
 
 .prices {
   font-family: "Teko", sans-serif;
-  font-weight: 500;
   font-size: 1.75em;
   line-height: 2.625em;
 }
@@ -254,7 +251,9 @@ input {
 
 main button {
   margin-top: 1rem;
+  display: none;
 }
+
 
 /*
 =========
@@ -439,8 +438,6 @@ aside {
 header {
   grid-column-start: 1;
   grid-column-end: 13;
-  grid-row-start: 1;
-  grid-row-end: 2;
   display: grid;
   grid-template-columns: repeat(12, 8.33%);
   grid-template-rows: min-content min-content min-content;
@@ -449,8 +446,6 @@ header {
 main {
   grid-column-start: 1;
   grid-column-end: 13;
-  grid-row-start: 2;
-  grid-row-end: 3;
   display: grid;
   grid-template-columns: repeat(12, 8.33%);
   grid-template-rows: repeat(4, min-content min-content min-content min-content);
@@ -459,8 +454,6 @@ main {
 footer {
   grid-column-start: 1;
   grid-column-end: 13;
-  grid-row-start: 3;
-  grid-row-end: 4;
   display: grid;
   grid-template-columns: 25% 10% 10% 10% 10% 10% 25%;
   grid-template-rows: min-content;
@@ -781,20 +774,6 @@ footer {
 =================
 */
 
-/* //////// MAX 480 PX \\\\\\\\ */
-@media (max-width: 480px) {
-  main button {
-    display: none;
-  }
-
-  /* This is when the mobile or tablet is rotated */
-  @media (orientation: landscape) {
-    .mainc-3 {
-      grid-template-rows: repeat(10, 60px)
-    }
-  }
-}
-
 /* //////// MIN 481 PX - MAX 1299 PX \\\\\\\\ */
 @media (min-width: 481px) and (max-width: 1299px) {
 
@@ -943,13 +922,6 @@ section .mainc-4714 {
   grid-row-start: 4;
   grid-row-end: 5;
 }
-
-  /* This is when the mobile or tablet is rotated */
-  @media (orientation: landscape) {
-    .mainc-3 {
-      grid-template-rows: repeat(10, 80px)
-    }
-  }
 
 }
 
@@ -1312,4 +1284,18 @@ section .mainc-4714 {
     grid-row-end: 3;
   }
 
+}
+
+/* This is when the mobile or tablet is rotated */
+@media (orientation: landscape) and (max-width: 480px) {
+  .mainc-3 {
+    grid-template-rows: repeat(10, 60px)
+  }
+}
+
+/* This is when the mobile or tablet is rotated */
+@media (orientation: landscape) and (min-width: 481 px) and (max-width: 1299px) {
+  .mainc-3 {
+    grid-template-rows: repeat(10, 80px)
+  }
 }
