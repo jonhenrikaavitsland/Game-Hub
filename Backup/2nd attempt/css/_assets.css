@@ -1084,17 +1084,17 @@ footer {
     grid-row-end: 2;
   }
 
-  /* Makes the content show 4 products in one line */
-.mainc-4 {
-    grid-template-columns: repeat(4, 8% 15%) 8%;
-    grid-template-rows: repeat(3, min-content);
-  }
-
-.hdr-44 {
+  .hdr-44 {
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 2;
+  }
+
+  /* Makes the content show 4 products in one line */
+.mainc-4 {
+    grid-template-columns: repeat(4, 8% 15%) 8%;
+    grid-template-rows: repeat(3, min-content);
   }
 
   /* Treding now main section */
