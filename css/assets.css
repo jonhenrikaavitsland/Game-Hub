@@ -49,7 +49,7 @@ Table of contents
 
 body {
   background-color: var(--dark-green);
-  max-width: 1700px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -84,6 +84,15 @@ h4 {
 .hdr-5,
 .ft-6 {
   white-space: nowrap;
+}
+
+.just-center {
+  display: grid;
+  justify-items: center;
+}
+
+.heading-center {
+  text-align: center;
 }
 
 
@@ -246,6 +255,7 @@ h3,
   border-color: var(--fancy-green);
 }
 
+textarea,
 input {
   caret-color: var(--dark-blue);
   color: var(--dark-blue);
@@ -330,7 +340,7 @@ aside {
   background-color: var(--black);
 }
 
-.mainc-463{
+.advert-13{
   max-width: 100%;
 }
 
@@ -356,6 +366,14 @@ aside {
 
 .trending {
   max-width: 100%;
+}
+
+.heading-center {
+  text-align: center;
+}
+
+.reviews {
+  display: none;
 }
 
 /*
@@ -530,6 +548,88 @@ footer {
   grid-column-end: 9;
 }
 
+/* This is the grid for the search-bar in main section of every page */
+.search-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.mainc-1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+}
+
+/* AD */
+.mainc-3 {
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: repeat(10, 7vh)
+}
+
+/* Hero image grid index page*/
+.mainc-31 {
+  grid-column-start: 6;
+  grid-column-end: 11;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.mainc-32 {
+  grid-column-start: 5;
+  grid-column-end: 10;
+  grid-row-start: 9;
+  grid-row-end: 10;
+  justify-self: end;
+  align-self: end;
+}
+
+/* New Releases index page */
+.new-releases-container {
+  display: grid;
+  grid-template-columns: min-content;
+  justify-content: center;
+}
+
+/* This is for the ad section and reviews for the biggest screen */
+.mid-section-home{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* AD */
+.advert-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, min-content);
+}
+
+/* Grid for the ad */
+.advert-11 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  justify-self: center;
+  align-self: end;
+}
+
+.advert-12 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  justify-self: center;
+  align-self: center;
+}
+
+.advert-13 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
 
 /*
 =================
@@ -540,7 +640,13 @@ footer {
 /* //////// MIN 481 PX - MAX 1299 PX \\\\\\\\ */
 @media (min-width: 481px) and (max-width: 1299px) {
 
-    /* Hamburger bar */
+  /* Hero image index page */
+  .mainc-3 {
+    background-image: url(../Images/hero-image-tablet.jpg);
+    background-position-x: center;
+  }
+
+  /* Hamburger bar */
   nav {
     display: block;
     position: static;
@@ -596,11 +702,44 @@ footer {
     text-align: center;
   }
 
+  /* Hero image grid index page*/
+  .mainc-31 {
+    grid-column-end: 10;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    justify-self: end;
+  }
+
+/* New Releases index page */
+.new-releases-container {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  justify-content: center;
+  column-gap: 15%;
+}
+
 }
 
 
 /* //////// MIN 1300 PX \\\\\\\\ */
 @media (min-width: 1300px) {
+
+  .mid-section-home{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;
+  }
+
+  .reviews {
+    display: block;
+  }
+
+  /* Hero image */
+  .mainc-3 {
+    background-image: url(../Images/hero-image-desktop.jpg);
+    background-position-x: right;
+  }
+
   /* Hamburger bar */
   nav {
     display: block;
@@ -723,6 +862,26 @@ footer {
     grid-column-end: 5;
   }
 
+  /* Hero image grid index page*/
+  .mainc-31 {
+    grid-column-end: 10;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    justify-self: end;
+  }
+
+  .mainc-32 {
+    grid-row-start: 7;
+    grid-row-end: 8;
+  }
+
+/* New Releases index page */
+.new-releases-container {
+  display: grid;
+  grid-template-columns: repeat(4, min-content);
+  justify-content: center;
+  column-gap: 10%;
+}
 
 }
 
