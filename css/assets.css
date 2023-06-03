@@ -636,8 +636,10 @@ footer {
 /* Games page */
 .games-container {
   display: grid;
-  grid-template-columns: min-content;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: center;
+  gap: 3em;
+  margin: 0 3em;
 }
 
 /*
@@ -731,6 +733,14 @@ footer {
   column-gap: 15%;
 }
 
+/* Games page */
+.games-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 2%;
+  margin: 0% 5%;
+}
 
 }
 
