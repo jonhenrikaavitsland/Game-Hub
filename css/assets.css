@@ -601,7 +601,7 @@ footer {
   justify-content: center;
 }
 
-/* This is for the ad section and reviews for the biggest screen */
+/* This is for the ad section and reviews - index page */
 .mid-section-home{
   display: grid;
   grid-template-columns: 1fr;
@@ -647,6 +647,12 @@ footer {
   justify-content: center;
   gap: 3em;
   margin: 0 15%;
+}
+
+/* This is for the ad section and release dates - games page */
+.mid-section-games{
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 /*
@@ -751,9 +757,13 @@ footer {
 
 /* //////// MIN 1300 PX \\\\\\\\ */
 @media (min-width: 1300px) {
+  /* This is for the ad section and release dates - games page */
+  .mid-section-games{
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;
+  }
 
   .mid-section-home{
-    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3em;
   }
