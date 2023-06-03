@@ -378,7 +378,6 @@ aside {
 ==============
 */
 
-
 /*
 ==============
 13. About page
@@ -639,7 +638,7 @@ footer {
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   gap: 3em;
-  margin: 0 3em;
+  margin: 0 15%;
 }
 
 /*
@@ -735,11 +734,8 @@ footer {
 
 /* Games page */
 .games-container {
-  display: grid;
   grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
-  gap: 2%;
-  margin: 0% 5%;
+  gap: 4em;
 }
 
 }
@@ -909,6 +905,12 @@ footer {
 .trending-container {
   grid-template-columns: repeat(4, min-content);
   column-gap: 10%;
+}
+
+/* Games page */
+.games-container {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5em;
 }
 
 }
