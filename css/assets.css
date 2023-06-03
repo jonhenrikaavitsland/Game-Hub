@@ -360,11 +360,7 @@ aside {
   min-height: 70vh;
 }
 
-.new-release {
-  max-width: 100%;
-}
-
-.trending {
+.cover {
   max-width: 100%;
 }
 
@@ -637,6 +633,12 @@ footer {
   grid-row-end: 3;
 }
 
+/* Games page */
+.games-container {
+  display: grid;
+  grid-template-columns: min-content;
+  justify-content: center;
+}
 
 /*
 =================
