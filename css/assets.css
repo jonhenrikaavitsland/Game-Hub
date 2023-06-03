@@ -591,6 +591,13 @@ footer {
   justify-content: center;
 }
 
+/* Trending now section index page */
+.trending-container {
+  display: grid;
+  grid-template-columns: min-content;
+  justify-content: center;
+}
+
 /* This is for the ad section and reviews for the biggest screen */
 .mid-section-home{
   display: grid;
@@ -712,11 +719,16 @@ footer {
 
 /* New Releases index page */
 .new-releases-container {
-  display: grid;
   grid-template-columns: min-content min-content;
-  justify-content: center;
   column-gap: 15%;
 }
+
+/* Trending now - index page */
+.trending-container {
+  grid-template-columns: min-content min-content;
+  column-gap: 15%;
+}
+
 
 }
 
@@ -877,9 +889,13 @@ footer {
 
 /* New Releases index page */
 .new-releases-container {
-  display: grid;
   grid-template-columns: repeat(4, min-content);
-  justify-content: center;
+  column-gap: 10%;
+}
+
+/* Trending now - index page */
+.trending-container {
+  grid-template-columns: repeat(4, min-content);
   column-gap: 10%;
 }
 
