@@ -160,6 +160,7 @@ h1 {
   line-height: 2.625em;
 }
 
+.words-ceo,
 .cta-sale,
 .cta-advert,
 .cta-explore,
@@ -453,6 +454,42 @@ aside {
 ==============
 */
 
+.ceo-img {
+  max-height: 20vh;
+  border-radius: 50%;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: min-content 1fr 1fr;
+}
+
+.abt-1 {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin-left: 5%;
+}
+
+.abt-2 {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin-left: 5%;
+}
+
+.abt-4 {
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
 
 /*
 ================
