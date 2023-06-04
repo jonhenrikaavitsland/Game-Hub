@@ -235,6 +235,17 @@ h3,
   margin: 1rem 0;
 }
 
+/* About page */
+.btn-link {
+  border-style: solid;
+  border-width: 0.0625rem;
+  border-radius: 0.3125rem;
+  padding: 0.75em 2em;
+  border-color: var(--light-blue);
+  color: var(--fancy-green);
+  background-color: var(--dark-blue);
+}
+
 /*
 =========
 6. Colors
