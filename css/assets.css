@@ -462,7 +462,7 @@ aside {
 .about-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: min-content 1fr 1fr;
+  grid-template-rows: min-content min-content 15rem;
 }
 
 .abt-1 {
@@ -489,6 +489,7 @@ aside {
   display: grid;
   justify-items: center;
   align-items: center;
+  white-space: nowrap;
 }
 
 /*
