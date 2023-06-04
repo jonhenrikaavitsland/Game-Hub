@@ -144,6 +144,7 @@ nav a {
 =============
 */
 
+textarea,
 input,
 Body {
   font-family: "Montserrat", sans-serif;
@@ -159,6 +160,7 @@ h1 {
   line-height: 2.625em;
 }
 
+.cta-sale,
 .cta-advert,
 .cta-explore,
 button,
@@ -215,6 +217,22 @@ h3,
   border-radius: 0.3125rem;
   padding: 0.35rem 0.7rem;
   margin-bottom: 3rem;
+  background-color: var(--dark-green);
+}
+
+.cta-checkout,
+.cta-contact {
+  border-style: solid;
+  border-width: 0.0625rem;
+  border-radius: 0.3125rem;
+  padding: 0.35rem 0.7rem;
+  border-color: var(--fancy-green);
+  color: var(--white-f2);
+  background-color: var(--dark-blue);
+}
+
+.cta-contact {
+  margin: 1rem 0;
 }
 
 /*
@@ -272,6 +290,38 @@ input {
 main button {
   margin-top: 1rem;
   display: none;
+}
+
+/* Contact form*/
+.tbl-1 {
+  height: 3rem;
+  width: 99%;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.form__textarea,
+.form__input {
+  display: block;
+}
+
+textarea {
+  height: 12rem;
+  width: 99%;
+  border-radius: 0.5rem;
+}
+
+/* Radio Buttons */
+.btn {
+  height: 2rem;
+  width: 2rem;
+}
+
+.radio-1 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 
@@ -655,6 +705,78 @@ footer {
   grid-template-columns: 1fr;
 }
 
+/* Contact form */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(9, min-content);
+}
+
+.cnt-1 {
+  grid-column-start: 2;
+  grid-column-end: 12;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.cnt-2 {
+  grid-column-start: 2;
+  grid-column-end: 12;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.cnt-3 {
+  grid-column-start: 2;
+  grid-column-end: 12;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.cnt-4 {
+  grid-column-start: 2;
+  grid-column-end: 12;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.cnt-5 {
+  grid-column-start: 2;
+  grid-column-end: 12;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+.cnt-6 {
+  grid-column-start: 2;
+  grid-column-end: 12;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+
+.cnt-7 {
+  grid-column-start: 2;
+  grid-column-end: 12;
+  grid-row-start: 7;
+  grid-row-end: 8;
+}
+
+.cnt-8 {
+  grid-column-start: 2;
+  grid-column-end: 12;
+  grid-row-start: 8;
+  grid-row-end: 9;
+}
+
+.cnt-9 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 9;
+  grid-row-end: 10;
+  justify-self: start;
+}
+
+
 /*
 =================
 19. Media Queries
@@ -750,6 +872,52 @@ footer {
 .games-container {
   grid-template-columns: repeat(3, 1fr);
   gap: 4em;
+}
+
+/* Contact form */
+.cnt-1 {
+  grid-column-start: 3;
+  grid-column-end: 11;
+}
+
+.cnt-2 {
+  grid-column-start: 3;
+  grid-column-end: 11;
+}
+
+.cnt-3 {
+  grid-column-start: 3;
+  grid-column-end: 11;
+}
+
+.cnt-4 {
+  grid-column-start: 3;
+  grid-column-end: 11;
+}
+
+.cnt-5 {
+  grid-column-start: 3;
+  grid-column-end: 11;
+}
+
+.cnt-6 {
+  grid-column-start: 3;
+  grid-column-end: 11;
+}
+
+.cnt-7 {
+  grid-column-start: 3;
+  grid-column-end: 11;
+}
+
+.cnt-8 {
+  grid-column-start: 3;
+  grid-column-end: 11;
+}
+
+.cnt-9 {
+  grid-column-start: 3;
+  grid-column-end: 4;
 }
 
 }
@@ -929,6 +1097,52 @@ footer {
 .games-container {
   grid-template-columns: repeat(4, 1fr);
   gap: 5em;
+}
+
+/* Contact form */
+.cnt-1 {
+  grid-column-start: 4;
+  grid-column-end: 10;
+}
+
+.cnt-2 {
+  grid-column-start: 4;
+  grid-column-end: 10;
+}
+
+.cnt-3 {
+  grid-column-start: 4;
+  grid-column-end: 10;
+}
+
+.cnt-4 {
+  grid-column-start: 4;
+  grid-column-end: 10;
+}
+
+.cnt-5 {
+  grid-column-start: 4;
+  grid-column-end: 10;
+}
+
+.cnt-6 {
+  grid-column-start: 4;
+  grid-column-end: 10;
+}
+
+.cnt-7 {
+  grid-column-start: 4;
+  grid-column-end: 10;
+}
+
+.cnt-8 {
+  grid-column-start: 4;
+  grid-column-end: 10;
+}
+
+.cnt-9 {
+  grid-column-start: 4;
+  grid-column-end: 5;
 }
 
 }
