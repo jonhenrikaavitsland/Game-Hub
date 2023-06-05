@@ -69,7 +69,8 @@ main {
 h1,
 h2,
 h3,
-h4 {
+h4,
+.breadcrumb {
   margin: 0;
 }
 
@@ -95,6 +96,13 @@ h4 {
   text-align: center;
 }
 
+.marg-start {
+  margin: 0 1rem;
+}
+
+.breadcrumb {
+  padding: 1rem 0;
+}
 
 /*
 =================
@@ -160,6 +168,7 @@ h1 {
   line-height: 2.625em;
 }
 
+.add-h2,
 .words-ceo,
 .cta-sale,
 .cta-advert,
@@ -459,38 +468,6 @@ aside {
   border-radius: 50%;
 }
 
-.about-container {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: min-content min-content 15rem;
-}
-
-.abt-1 {
-  grid-column-start: 1;
-  grid-column-end: 7;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  margin-left: 5%;
-}
-
-.abt-2 {
-  grid-column-start: 1;
-  grid-column-end: 7;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  margin-left: 5%;
-}
-
-.abt-4 {
-  grid-column-start: 2;
-  grid-column-end: 6;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  white-space: nowrap;
-}
 
 /*
 ================
@@ -504,6 +481,37 @@ aside {
 15. Assassin page
 =================
 */
+.assassin-title {
+  margin-top: 2rem;
+}
+
+.assassin-login {
+  padding: 1rem 0;
+  margin: 2rem 1rem;
+}
+
+.playbox {
+  max-width: 100%;
+  margin: 2rem 0;
+}
+
+/* This grid is used to make the background image visible.*/
+.hero-top {
+  background-image: url(../images/assassin-cropped-face.jpg);
+  padding: 20px 20px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: top;
+  background-size: cover;
+  display: grid;
+  grid-template-rows: repeat(10, 1rem);
+}
+
+.buy-now-container {
+  display: flex;
+  flex-wrap: nowrap;
+  column-gap: 1rem;
+}
 
 
 /*
@@ -825,6 +833,72 @@ footer {
   justify-self: start;
 }
 
+/* About page */
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: min-content min-content 15rem;
+}
+
+.abt-1 {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin-left: 5%;
+}
+
+.abt-2 {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin-left: 5%;
+}
+
+.abt-4 {
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  white-space: nowrap;
+}
+
+/* Assassin page */
+.descr-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: min-content 1fr min-content min-content;
+}
+
+.prch-1 {
+  grid-column-start: 1;
+  grid-column-end: 6;
+}
+
+.prch-2 {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.prch-3 {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  margin-bottom: 3rem;
+}
+
+.prch-4 {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  justify-self: end;
+}
 
 /*
 =================
@@ -834,6 +908,11 @@ footer {
 
 /* //////// MIN 481 PX - MAX 1299 PX \\\\\\\\ */
 @media (min-width: 481px) and (max-width: 1299px) {
+
+  /* Assassin page */
+  .hero-top {
+      grid-template-rows: repeat(10, 3rem);
+  }
 
   /* Hero image index page */
   .mainc-3 {
@@ -1194,6 +1273,41 @@ footer {
   grid-column-end: 5;
 }
 
+/* Assassin page */
+.buy-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.bc-1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.bc-2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.bc-3 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  align-self: center;
+}
+
+.prch-4 {
+  justify-self: start;
+}
+
+.hero-top {
+  grid-template-rows: repeat(10, 4rem);
+}
+
 }
 
 
@@ -1204,16 +1318,26 @@ footer {
   .mainc-3 {
     grid-template-rows: repeat(10, 60px)
   }
+
+.hero-top {
+  grid-template-rows: repeat(10, 2rem);
+}
+
 }
 
 @media (orientation: landscape) and (min-width: 481px) and (max-width: 1299px) {
   .mainc-3 {
     grid-template-rows: repeat(10, 80px)
   }
+
+
 }
 
 @media (orientation: landscape) and (min-width: 1300px) {
   .mainc-3 {
     grid-template-rows: repeat(10, 100px)
   }
+
+
+
 }
