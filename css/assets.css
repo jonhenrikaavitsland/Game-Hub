@@ -52,17 +52,6 @@ body {
   margin: 0 auto;
 }
 
-footer {
-  background-color: var(--dark-green);
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-header {
-  background-color: var(--dark-green);
-}
-
 .bg-flow {
   background-color: var(--dark-blue);
   min-height: 100vh;
@@ -382,6 +371,9 @@ select {
 8. Header
 =========
 */
+header {
+  background-color: var(--dark-green);
+}
 
 nav a {
   text-transform: uppercase;
@@ -414,7 +406,12 @@ nav a {
 9. Footer
 =========
 */
-
+footer {
+  background-color: var(--dark-green);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
 
 .ft-1 {
   margin-top: 1rem;
@@ -643,6 +640,11 @@ aside {
   display: none;
 }
 
+.sec-checkout {
+  display: grid;
+  grid-template-rows: min-content min-content 10rem;
+}
+
 /*
 ================
 17. Success page
@@ -847,6 +849,7 @@ footer {
 .trending-container {
   display: grid;
   grid-template-columns: min-content;
+  grid-template-rows: 1fr 1fr 1fr 1fr 10rem;
   justify-content: center;
 }
 
@@ -902,13 +905,14 @@ footer {
 .mid-section-games{
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 /* Contact form */
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(9, min-content);
+  grid-template-rows: repeat(9, min-content) 15rem;
 }
 
 .cnt-1 {
@@ -979,7 +983,7 @@ footer {
 .about-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: min-content min-content 15rem;
+  grid-template-rows: 1fr 1fr 1fr 15rem;
 }
 
 .abt-1 {
@@ -1010,6 +1014,11 @@ footer {
 }
 
 /* Assassin page */
+.buy-container {
+  display: grid;
+  grid-template-rows: repeat(3, min-content) 15rem;
+}
+
 .descr-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
