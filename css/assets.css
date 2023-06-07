@@ -787,8 +787,6 @@ footer {
 14. Contact page
 ================
 */
-
-/* Contact form */
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
