@@ -46,11 +46,26 @@ Table of contents
 2. Global Styles
 ================
 */
-
 body {
   background-color: var(--dark-green);
   max-width: 1500px;
   margin: 0 auto;
+}
+
+footer {
+  background-color: var(--dark-green);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+header {
+  background-color: var(--dark-green);
+}
+
+.bg-flow {
+  background-color: var(--dark-blue);
+  min-height: 100vh;
 }
 
 a {
@@ -62,9 +77,7 @@ body {
   color: var(--white-f2);
 }
 
-main {
-  background-color: var(--dark-blue);
-}
+
 
 h1,
 h2,
@@ -97,6 +110,7 @@ h4,
   text-align: center;
 }
 
+.success-container,
 .marg-start {
   margin: 0 1rem;
 }
@@ -401,6 +415,7 @@ nav a {
 =========
 */
 
+
 .ft-1 {
   margin-top: 1rem;
 }
@@ -633,7 +648,27 @@ aside {
 17. Success page
 ================
 */
+.success-container {
+  display: grid;
+  grid-template-rows: min-content min-content 1fr 1fr;
+}
 
+.fa-square-check {
+  font-size: 3rem;
+}
+
+.success-header-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.success-sent {
+  margin: 2rem 0;
+}
 
 /*
 ========
