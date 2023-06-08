@@ -435,7 +435,7 @@ select {
 
 .ccv {
   height: 2.6rem;
-  width: 7rem;
+  width: 5rem;
   border-radius: 0.5rem;
 }
 
@@ -1009,7 +1009,7 @@ footer {
 
 .exp-ccv-container {
   display: grid;
-  grid-template-columns: 45% 55%;
+  grid-template-columns: 55% 45%;
   grid-template-rows: 2rem 4rem;
 }
 
@@ -1217,7 +1217,7 @@ footer {
 
   /* Checkout page */
   .exp-ccv-container {
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 35% 65%;
   }
 
   .ft-6 {
