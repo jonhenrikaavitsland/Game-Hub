@@ -130,6 +130,10 @@ nav a {
   max-width: 100%;
 }
 
+.cover:hover {
+  opacity: 80%;
+}
+
 
 /*
 =================
@@ -154,7 +158,7 @@ nav {
   position: absolute;
   background-color: #2d3e77;
   left: 0%;
-  top: 50%;
+  top: 65%;
 }
 
 nav a {
@@ -289,7 +293,15 @@ h3,
 #hdr-42:active,
 #hdr-43:active,
 #hdr-44:active,
-footer a:active {
+footer a:active,
+.titles:hover,
+.prices:hover,
+#hdr-41:hover,
+#hdr-42:hover,
+#hdr-43:hover,
+#hdr-44:hover,
+#crt-1:hover,
+#act-1:hover {
   color: var(--fancy-green);
 }
 
