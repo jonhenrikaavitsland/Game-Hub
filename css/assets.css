@@ -754,7 +754,7 @@ footer {
 .about-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 1fr 1fr 1fr 15rem;
+  grid-template-rows: min-content min-content 200px 15rem;
 }
 
 .abt-1 {
@@ -762,7 +762,8 @@ footer {
   grid-column-end: 7;
   grid-row-start: 1;
   grid-row-end: 2;
-  margin-left: 5%;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .abt-2 {
@@ -771,6 +772,7 @@ footer {
   grid-row-start: 2;
   grid-row-end: 3;
   margin-left: 5%;
+  margin-bottom: 2rem;
 }
 
 .abt-4 {
@@ -1549,6 +1551,18 @@ footer {
 
   .ft-6 {
     column-gap: 3rem;
+  }
+
+  .abt-4 {
+    display: flex;
+    column-gap: 3rem;
+    justify-content: center;
+  }
+
+  .about-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr min-content 15rem;
   }
 
 }
