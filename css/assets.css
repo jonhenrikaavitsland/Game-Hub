@@ -125,9 +125,7 @@ nav a {
 .pay-2,
 .playbox,
 .cover,
-.advert-13,
-.icon,
-.gh-logo{
+.advert-13 {
   max-width: 100%;
 }
 
@@ -286,7 +284,7 @@ h3,
 #hdr-42:active,
 #hdr-43:active,
 #hdr-44:active,
-footer ul a:active {
+footer a:active {
   color: var(--fancy-green);
 }
 
@@ -454,6 +452,10 @@ select {
 8. Header
 =========
 */
+.gh-logo {
+  max-width: 70%;
+}
+
 .gh-logo:active {
   content: url(../images/logo-checked.png);
 }
@@ -541,22 +543,14 @@ footer {
 }
 
 .ft-1 {
-  margin-top: 1rem;
-}
-
-footer li {
-  list-style-type: none;
-  margin-left: 0.5rem
-}
-
-footer ul {
-  padding: 0;
+  margin-top: 0.5rem;
 }
 
 /* social bar in footer */
 
 .icon {
   min-width: none;
+  max-width: 50px;
 }
 
 /* Grid */
@@ -580,12 +574,16 @@ footer {
 }
 
 .ft-6 {
-  grid-column-start: 2;
-  grid-column-end: 7;
+  grid-column-start: 1;
+  grid-column-end: 13;
   grid-row-start: 2;
   grid-row-end: 3;
   justify-self: center;
   text-align: center;
+  display: flex;
+  flex-wrap: nowrap;
+  column-gap: 3rem;
+  padding: 1rem;
 }
 
 /* Positions socials in the footer section */
