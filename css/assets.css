@@ -50,7 +50,7 @@ Table of contents
 ================
 */
 body {
-  min-width: 270px;
+  min-width: 375px;
   max-width: 1500px;
   margin: 0 auto;
 }
@@ -772,10 +772,11 @@ footer {
 /* Games page */
 .games-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 40%);
   justify-content: center;
-  gap: 3em;
-  margin: 0 15%;
+  column-gap: 10%;
+  row-gap: 3rem;
+  margin: 0 5%;
 }
 
 /* This is for the ad section and release dates - games page */
@@ -1209,7 +1210,7 @@ footer {
   /* Games page */
   .games-container {
     grid-template-columns: repeat(3, 1fr);
-    gap: 4em;
+    
   }
 
   /* This is for the ad section and release dates - games page */
