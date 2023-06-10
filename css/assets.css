@@ -272,19 +272,19 @@ h3,
   border-radius: 0.5rem;
 }
 
-.btn-link,
-.cta-advert,
-.cta-sale,
-.cta-explore {
+.cta-checkout:hover,
+.cta-contact:hover {
+  cursor: pointer;
+}
+
+/* The following is for transition for my buttons */
+.cta {
   position: relative;
   display: inline-block;
   overflow: hidden;
 }
 
-.btn-link:before,
-.cta-advert:before,
-.cta-sale:before,
-.cta-explore:before {
+.cta:before {
   content: '';
   padding: 10px;
   background-color: var(--fancy-green);
@@ -297,10 +297,7 @@ h3,
   opacity: 0.3;
 }
 
-.btn-link:hover:before,
-.cta-advert:hover:before,
-.cta-sale:hover:before,
-.cta-explore:hover:before {
+.cta:hover:before {
   left: 130%;
 }
 
