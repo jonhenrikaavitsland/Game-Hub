@@ -16,7 +16,7 @@
     <div class="bg-flow">
       <header>
         <a href="index.html" class="hdr-1"><img src="images/logo-unchecked.png" alt="Game Hub Logo" class="gh-logo"></a>
-        <p class ='hdr-5'><a href="#" class="active">Sign in / Register</a><a href="#" class="active">Cart (<span class="add-fancy">1</span>)</a><a href="#" class="active">Account</a></p>
+        <p class ='hdr-5'><a href="#" class="active on-hover">Sign in / Register</a><a href="#" class="active on-hover">Cart (<span class="add-fancy">1</span>)</a><a href="#" class="active on-hover">Account</a></p>
       </header>
       <main>
         <p class="breadcrumb marg-start"><a href="../index.html">Home</a> > <span class="add-fancy">Checkout</span></p>
@@ -53,11 +53,11 @@
         <form action="Success.html" class="marg-start checkout-frm">
           <div>
             <label for="name">Name of the card holder:</label>
-            <input type="text" name="name" id="name" required placeholder="Name as on the card" class="form__input tbl-1">
+            <input type="text" name="name" id="name" required placeholder="Name as on the card" class="form__input tbl-1 form-hover">
           </div>
           <div>
             <label for="card">Card number:</label>
-            <input type="tel" name="card" id="card" minlength="16" maxlength="16" required placeholder="16 numbers" class="form__input tbl-1">
+            <input type="tel" name="card" id="card" minlength="16" maxlength="16" required placeholder="16 numbers" class="form__input tbl-1 form-hover">
           </div>
           <p class="give-margin-null">Expiration date:</p>
           <div class="exp-ccv-container">
@@ -70,7 +70,7 @@
               </div>
             </div>
             <div class="options-container ecc-2">
-              <select name="month" id="month">
+              <select name="month" id="month" class="form-hover">
                 <option value="01">01</option>
                 <option value="02">02</option>
                 <option value="03">03</option>
@@ -84,7 +84,7 @@
                 <option value="11">11</option>
                 <option value="12">12</option>
               </select>
-              <select name="year" id="year">
+              <select name="year" id="year" class="form-hover">
                 <option value="23">23</option>
                 <option value="24">24</option>
                 <option value="25">25</option>
@@ -102,7 +102,7 @@
               <label for="ccv">ccv:</label>
             </div>
             <div class="ecc-4">
-              <input type="tel" name="ccv" id="ccv" required minlength="3" maxlength="3" placeholder="123" class="form__input ccv">
+              <input type="tel" name="ccv" id="ccv" required minlength="3" maxlength="3" placeholder="123" class="form__input ccv form-hover">
             </div>
           </div>
           <input type="submit" value="PAY NOW" class="cta-checkout">
