@@ -238,6 +238,12 @@ h3,
   padding: 1em 2em;
 }
 
+.btn-link {
+  height: 1.5rem;
+  width: 7rem;
+  text-align: center;
+}
+
 .cta-contact {
   margin-top: 1rem;
 }
