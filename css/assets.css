@@ -416,6 +416,10 @@ input {
   caret-color: var(--dark-blue);
 }
 
+.form-hover:hover {
+  background-color: #B1DBAD;
+}
+
 
 /*
 ========
@@ -497,10 +501,6 @@ select {
   grid-column-start: 1;
   grid-column-end: 3;
   text-align: center;
-}
-
-.form-hover:hover {
-  background-color: #B1DBAD;
 }
 
 /*
