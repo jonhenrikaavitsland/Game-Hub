@@ -796,7 +796,7 @@ footer {
 .mid-section-games{
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 10rem;
 }
 
 /*
@@ -962,7 +962,7 @@ footer {
 /* Grid */
 .buy-container {
   display: grid;
-  grid-template-rows: repeat(3, min-content) 15rem;
+  grid-template-rows: repeat(3, min-content) 10rem;
 }
 
 .descr-container {
@@ -1134,7 +1134,7 @@ footer {
   }
 
   .buy-container {
-    grid-template-rows: repeat(3, min-content) 20rem;
+    grid-template-rows: repeat(3, min-content) 15rem;
   }
 
   /* Hero image index page */
@@ -1216,7 +1216,7 @@ footer {
   /* Trending now - index page */
   .trending-container {
     grid-template-columns: 20% 20%;
-    grid-template-rows: 1fr 1fr 20rem;
+    grid-template-rows: 1fr 1fr 10rem;
     column-gap: 15%;
   }
 
@@ -1294,7 +1294,7 @@ footer {
   /* This is for the ad section and release dates - games page */
   .mid-section-games{
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 20rem;
+    grid-template-rows: 1fr 15rem;
     gap: 3em;
   }
 
@@ -1457,7 +1457,7 @@ footer {
   /* Trending now - index page */
   .trending-container {
     grid-template-columns: repeat(4, 10%);
-    grid-template-rows: 1fr 20rem;
+    grid-template-rows: 1fr 10rem;
     column-gap: 10%;
   }
 
@@ -1517,7 +1517,7 @@ footer {
   .buy-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 20rem;
+    grid-template-rows: 1fr 1fr 15rem;
   }
 
   .bc-1 {
