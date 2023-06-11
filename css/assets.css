@@ -109,7 +109,7 @@ a,
 }
 
 .hide-me,
-.reviews,
+.reviews-container,
 .hdr-8,
 .hdr-7,
 .hdr-5 {
@@ -721,6 +721,29 @@ footer {
 11. Index page
 =============
 */
+/* This is the reviews section for desktop size */
+blockquote {
+  margin: 0;
+}
+
+blockquote p {
+  padding: 1rem;
+  background-color: var(--light-blue);
+  border-radius: 0.5rem;
+}
+
+blockquote p::before {
+  content: '\201C';
+}
+
+blockquote p::after {
+  content: '\201D';
+}
+
+figure {
+  margin-left: 0;
+}
+/* All above this is for reviews */ 
 
 .mainc-3 {
   background-image: url("../Images/hero-image-mobile.jpg");
@@ -1303,10 +1326,6 @@ footer {
     gap: 3em;
   }
 
-  .reviews {
-    display: block;
-  }
-
   /* Hero image */
   .mainc-3 {
     background-image: url(../Images/hero-image-desktop.jpg);
@@ -1623,6 +1642,12 @@ footer {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 1fr 1fr min-content 15rem;
+  }
+
+  .reviews-container {
+    display: grid;
+    grid-template-rows: 3rem 1fr 1fr;
+    align-items: center;
   }
 
 }
