@@ -746,6 +746,7 @@ figure {
   display: grid;
   grid-template-rows: 3rem 1fr 1fr;
   align-items: center;
+  margin-top: 3rem;
 }
 
 .reviews-margin {
@@ -827,7 +828,7 @@ figure {
 .mid-section-games{
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 10rem;
+  grid-template-rows: min-content 1fr 15rem;
 }
 
 /*
@@ -1259,7 +1260,7 @@ figure {
 
   /* This is for the ad section and release dates - games page */
   .mid-section-games{
-  grid-template-rows: 1fr 20rem;
+  grid-template-rows: 1fr 1fr 20rem;
   }
 
   /* Contact form */
@@ -1325,6 +1326,10 @@ figure {
   /* Reviews */
   .reviews-margin {
     margin-left: 0;
+  }
+
+  .reviews-container {
+    margin-top: 0;
   }
 
   /* This is for the ad section and release dates - games page */
