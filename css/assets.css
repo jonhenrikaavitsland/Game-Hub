@@ -109,7 +109,6 @@ a,
 }
 
 .hide-me,
-.reviews-container,
 .hdr-8,
 .hdr-7,
 .hdr-5 {
@@ -720,7 +719,7 @@ footer {
 11. Index page
 =============
 */
-/* This is the reviews section for desktop size */
+/* This is the reviews section for index and games page */
 blockquote {
   margin: 0;
 }
@@ -741,6 +740,16 @@ blockquote p::after {
 
 figure {
   margin-left: 0;
+}
+
+.reviews-container {
+  display: grid;
+  grid-template-rows: 3rem 1fr 1fr;
+  align-items: center;
+}
+
+.reviews-margin {
+  margin-left: 40px;
 }
 /* All above this is for reviews */ 
 
@@ -1313,6 +1322,11 @@ figure {
 
 /* //////// MIN 1300 PX \\\\\\\\ */
 @media (min-width: 1300px) {
+  /* Reviews */
+  .reviews-margin {
+    margin-left: 0;
+  }
+
   /* This is for the ad section and release dates - games page */
   .mid-section-games{
     grid-template-columns: 1fr 1fr;
@@ -1641,12 +1655,6 @@ figure {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 1fr 1fr min-content 15rem;
-  }
-
-  .reviews-container {
-    display: grid;
-    grid-template-rows: 3rem 1fr 1fr;
-    align-items: center;
   }
 
 }
