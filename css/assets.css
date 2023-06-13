@@ -24,7 +24,8 @@ Table of contents
 15. Assassin page
 16. Checkout page
 17. Success page
-18. Media Queries
+18. Account
+19. Media Queries
 */
 
 /*
@@ -245,6 +246,7 @@ h2 {
   text-align: center;
 }
 
+.log-in-btn,
 .cta-contact {
   margin-top: 1rem;
 }
@@ -255,7 +257,8 @@ h2 {
   text-align: center;
 }
 
-/* Ad */
+/* Ad and account page */
+.log-in-btn,
 .cta-advert {
   padding: 0.5em 1em;
 }
@@ -272,6 +275,7 @@ h2 {
   width: 4rem;
 }
 
+.log-in-btn,
 .src-btn,
 .cta-checkout,
 .cta-contact,
@@ -284,6 +288,7 @@ h2 {
   border-radius: 0.5rem;
 }
 
+.log-in-btn,
 .src-btn:hover,
 .cta-checkout:hover,
 .cta-contact:hover {
@@ -314,6 +319,9 @@ h2 {
   left: 130%;
 }
 
+.log-in-btn {
+  margin-bottom: 2rem;
+}
 
 /*
 =========
@@ -356,6 +364,7 @@ input,
 
 a,
 body,
+.log-in-btn,
 .cta-checkout,
 .cta-contact,
 .hamburger-icon:active {
@@ -376,6 +385,7 @@ main,
 background-color: var(--dark-blue);
 }
 
+.log-in-btn,
 body,
 footer,
 header,
@@ -411,6 +421,10 @@ border-color: var(--light-blue);
   border-color: var(--fancy-green);
 }
 
+.log-in-btn {
+  border-color: var(--white-f2);
+}
+
 
 /*
 -----------------
@@ -423,6 +437,7 @@ input {
   caret-color: var(--dark-blue);
 }
 
+.srch:hover,
 .form-hover:hover {
   background-color: #B1DBAD;
 }
@@ -443,6 +458,11 @@ input {
   width: 95%;
 }
 
+.srch-marg {
+  margin-bottom: 1rem;
+}
+
+.srch,
 .tbl-1,
 .form-1,
 .form-2 {
@@ -1153,8 +1173,29 @@ figure {
 
 
 /*
+===========
+18. Account
+===========
+*/
+.search-wrap {
+  display: flex;
+  flex-direction: column;
+  min-width: 20rem;
+  margin-bottom: 1rem;
+}
+
+.log-in-wrap {
+  display: grid;
+  justify-items: center;
+}
+
+.info-wrap {
+text-align: center;
+}
+
+/*
 =================
-18. Media Queries
+19. Media Queries
 =================
 */
 
