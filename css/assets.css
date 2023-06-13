@@ -905,6 +905,10 @@ figure {
 14. Contact page
 ================
 */
+.h-contact {
+  margin-top: 3rem;
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
