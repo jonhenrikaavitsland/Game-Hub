@@ -52,11 +52,14 @@ Table of contents
 body {
   min-width: 375px;
   max-width: 1500px;
-  margin: 0 auto;
+  min-height: 100vh;
+  margin: 0 auto; 
+  display: flex;
+  flex-direction: column;
 }
 
-.bg-flow {
-  min-height: 100vh;
+main {
+  flex: 1;
 }
 
 a {
@@ -365,7 +368,7 @@ body,
 6.2. Background Color
 ---------------------
 */
-.bg-flow,
+main,
 .cta-checkout,
 .cta-contact,
 .btn-link,
@@ -596,8 +599,6 @@ header {
 =========
 */
 footer {
-  position: fixed;
-  bottom: 0;
   width: 100%;
   max-width: 1500px;
 }
@@ -607,7 +608,6 @@ footer {
 }
 
 /* social bar in footer */
-
 .icon {
   min-width: none;
   max-width: 50px;
