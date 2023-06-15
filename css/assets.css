@@ -1216,7 +1216,7 @@ text-align: center;
 
   /* This is for the ad section and release dates - games page */
   .mid-section-games{
-  grid-template-rows: 1fr 1fr 20rem;
+  grid-template-rows: min-content 1fr 20rem;
   }
 
   /* Contact form */
